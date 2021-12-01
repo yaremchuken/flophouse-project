@@ -1,0 +1,19 @@
+.category__controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+@media screen and (max-width: 920px) {
+  .category__controls {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 44px;
+    justify-content: space-around;
+    background: #fcfaf7;
+    box-shadow: 0px -8px 32px rgba(59, 55, 72, 0.12);
+  }
+}

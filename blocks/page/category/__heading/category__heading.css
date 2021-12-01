@@ -1,0 +1,19 @@
+.category__heading {
+  padding: 0;
+  margin: 0;
+  color: #3b3748;
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+
+  grid-row: 2;
+}
+
+@media screen and (max-width: 920px) {
+  .category__heading {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0;
+  }
+}

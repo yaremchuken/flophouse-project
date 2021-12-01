@@ -5,7 +5,6 @@
 
 @import url(../blocks/page/page.css);
 
-@import url(../blocks/header/header.css);
 @import url(../blocks/header/__container/header_container.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__bar-left/header__bar-left.css);
@@ -24,5 +23,23 @@
 @import url(../blocks/button/__icon/button__icon.css);
 
 
-
 @import url(../blocks/content/content.css);
+
+@import url(../blocks/footer/footer.css);
+
+/** Страничка "Выберите категорию" */
+
+@import url(../blocks/page/category/__form/category__form.css);
+@import url(../blocks/page/category/__heading/category__heading.css);
+@import url(../blocks/page/category/__input-container/category__input-container.css);
+@import url(../blocks/page/category/__step/category__step.css);
+@import url(../blocks/page/category/__title/category__title.css);
+@import url(../blocks/page/category/__form-holder/category__form-holder.css);
+@import url(../blocks/page/category/__input-value/category__input-value.css);
+@import url(../blocks/page/category/__controls/category__controls.css);
+
+@import url(../blocks/form-input/form-input.css);
+@import url(../blocks/form-input/_active/form-input_active.css);
+@import url(../blocks/form-input/__checked/form-input__checked.css);
+@import url(../blocks/form-input/__control/form-input__control.css);
+@import url(../blocks/form-input/__control/_active/form-input__control_active.css);
