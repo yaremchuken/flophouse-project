@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гедонизмфест</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+
+  <body class="container">
+    <div class="page">
+      <header class="header">
+        <div class="header__logo-location">
+          <div class="header__logo"></div>
+          <div class="header__location"></div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">куда пойти</a>
+            </li>
+            <li>
+              <a href="#">стать участником</a>
+            </li>
+            <li>
+              <a href="#">о фестивале</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <h1 class="category__title">стать участником</h1>
+        <div class="category__form-holder">
+          <p class="category__step">шаг 1 из 4</p>
+          <p class="category__heading">выберите категорию</p>
+          <form action="" name="category__form" class="category__form">
+            <fieldset class="category__input-container">
+              <label class="form-input">
+                <input class="category__input-value" type="radio" name="category" value="cafe" />
+                <span>кафе/бар/ресторан</span>
+              </label>
+              <label class="form-input form-input_active">
+                <input class="category__input-value category__input-value_checked" type="radio" name="category" value="lection" />
+                <span>мастер-класс/лекция</span>
+                <img src="../images/form/checked.svg" class="form-input__checked" />
+              </label>
+              <label class="form-input">
+                <input class="category__input-value" type="radio" name="category" value="party" />
+                <span>посиделки/вечеринка</span>
+              </label>
+              <label class="form-input">
+                <input class="category__input-value" type="radio" name="category" value="other" />
+                <span>другое</span>
+              </label>
+            </fieldset>
+            <div class="category__controls">
+              <button type="button" class="form-input form-input__control">отмена</button>
+              <button type="submit" class="form-input form-input__control form-input__control_active">далее</button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
