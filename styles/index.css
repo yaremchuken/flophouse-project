@@ -1,0 +1,18 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+
+
+/*footer*/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__container/footer__container.css);
+@import url(../blocks/footer/__icon/footer__icon.css);
+@import url(../blocks/footer/__icons/footer__icons.css);
+@import url(../blocks/footer/__image/footer__image.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__organizer/footer__organizer.css);
+@import url(../blocks/footer/__partners/footer__partners.css);
+@import url(../blocks/footer/__social/footer__social.css);
+@import url(../blocks/footer/__title/footer__title.css);
+@import url(../blocks/footer/__email/footer__email.css);
