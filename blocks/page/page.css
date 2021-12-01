@@ -1,12 +1,11 @@
 .page {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   max-width: 1440px;
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
-  font-family: 'TT Firs Neue', Arial, sans-serif;
+  font-family: "TT Firs Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
