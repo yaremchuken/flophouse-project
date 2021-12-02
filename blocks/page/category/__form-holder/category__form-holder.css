@@ -1,6 +1,6 @@
 .category__form-holder {
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 220px;
   display: grid;
 
   grid-template-columns: minmax(min-content, 309px) minmax(min-content, 531px);
