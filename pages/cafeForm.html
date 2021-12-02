@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гедонизмфест</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body class="container">
+    <div class="page">
+      <header class="header">
+        <!-- <div class="header__container"> -->
+          <div class="header__bar-left">
+            <div class="header__logo"></div>
+            <button type="button" class="button button_type_link button_place_header">
+              <img src="../images/icon_location.svg" alt="location icon" class="button__icon">
+              Санкт-Петербург
+            </button>
+          </div>
+          <nav class="header__nav-bar">
+            <ul class="header__link-list">
+              <li class="header__list-item">
+                <button type="button" class="button button_type_link">куда пойти</button>
+              </li>
+              <li class="header__list-item">
+                <button type="button" class="button button_type_link">стать участником</button>
+              </li>
+              <li class="header__list-item">
+                <button type="button" class="button button_type_link">о фестивале</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__user-actions">
+            <button type="button" class="button button_type_link">
+              <img src="../images/icon_heart.svg" alt="heart icon" class="button__icon">
+              хочу пойти</button>
+            <button type="button" class="button button_type_filled button_place_header">поддержать</button>
+            <button type="button" class="button button_type_burger"></button>
+          </div>
+        <!-- </div> -->
+      </header>
+
+      <main class="content">
+        <h1 class="category__title">стать участником</h1>
+        <div class="form__container_place_cafe">
+          <p class="category__step">шаг 2 из 4</p>
+          <p class="category__heading">Заполните форму</p>
+          <form action="" name="category__form" class="category__form">
+            <fieldset class="category__input-container form__container_line_bottom">
+              <label class="form-input form-input_active">
+                <input class="category__input-value" type="radio" name="category" value="cafe" />
+                <span>кафе/бар/ресторан</span>
+              </label>
+            </fieldset>
+            
+            <fieldset class="category__input-container">
+              <label class="form__label">город</label>
+              <select class="form__input form-input__city-list">
+                <option value="" style="display:none">Выберите из списка</option>
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+              </select>
+              <label class="form__label" for="cafeName">название заведения</label>
+              <input class="form__input formCafe__input_type_text" id="cafeName" type="text" name="category" placeholder="введите название заведения" value="" />
+              <label class="form__label" for="contact-name">контактное лицо</label>
+              <input class="form__input formCafe__input_type_text" id="contact-name" type="text" name="category" placeholder="введите ФИО" value="" />
+              <label class="form__label" for="contact-number">телефон для связи с организатором</label>
+              <input class="form__input formCafe__input_type_number" id="contact-number" type="tel" name="category" value="+7(" />    
+              <label class="form__label" for="cafe-description">описание</label>
+              <textarea class="form__input formCafe__description" name="" id="cafe-description" placeholder="Укажите что из меню будет принимать участие в акции" cols="30" rows="6"></textarea>
+            </fieldset>
+
+            <div class="category__controls">
+              <button type="button" class="form-input form-input__control">отмена</button>
+              <button type="submit" class="form-input form-input__control form-input__control_active">далее</button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <img class="footer__image" src="../images/footer_illustration.svg" alt="Ночлежка">
+          <div class="footer__organizer">
+            <h3 class="footer__title">организатор:</h3>
+            <ul class="footer__links">
+              <li>
+                <a class="footer__link" href="#">Ночлежка</a>
+              </li>
+              <li>
+                <a class="footer__email" href="#">info@hedonismfest.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__partners">
+            <h3 class="footer__title">сделано с любовью:</h3>
+            <ul class="footer__links">
+              <li>
+                <a class="footer__link" href="#">Fastsol Digital</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">shishki.collective</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">студентами Яндекс.Практикума</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <h3 class="footer__title">мы в соцсетях:</h3>
+            <ul class="footer__icons">
+              <li class="footer__icon" >
+                <a href="#" >
+                  <img src="../images/footer_facebook-icon.svg" alt="facebook">
+                </a>
+              </li>
+              <li class="footer__icon" >
+                <a href="#">
+                  <img src="../images/footer_instagram-icon.svg" alt="instagram">
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a  href="#">
+                  <img src="../images/footer_vk-icon.svg" alt="vkontakte">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

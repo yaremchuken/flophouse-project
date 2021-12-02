@@ -44,6 +44,12 @@
 @import url(../blocks/form-input/__control/form-input__control.css);
 @import url(../blocks/form-input/__control/_active/form-input__control_active.css);
 
+/* Форма "заполните форму для кафе/бар/ресторан" */
+@import url(../blocks/form/__city-list/form-input__city-list.css);
+@import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__label/form__label.css);
+@import url(../blocks/form/__container/_line/form__container_line_bottom.css);
+@import url(../blocks/form/__container/_place/form__container_place_cafe.css);
 /* footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);
