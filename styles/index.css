@@ -23,8 +23,16 @@
 @import url(../blocks/button/_place/button_place_header.css);
 @import url(../blocks/button/__icon/button__icon.css);
 
-
+/* Страничка "Стать участником" */
 @import url(../blocks/content/content.css);
+@import url(../blocks/how-to-participate/how-to-participate.css);
+@import url(../blocks/question-block/question-block.css);
+@import url(../blocks/title/title.css);
+@import url(../blocks/subtitle/subtitle.css);
+@import url(../blocks/question-block/__title/question-block__title.css);
+@import url(../blocks/question-block/__number/question-block__number.css);
+@import url(../blocks/question-block/__text/question-block__text.css);
+@import url(../blocks/form-button/form-button.css);
 
 /*Общие стили для элементов форм*/
 @import url(../blocks/form/__form/form__form.css);
@@ -33,6 +41,7 @@
 @import url(../blocks/form/__step/form__step.css);
 @import url(../blocks/form/__title/form__title.css);
 @import url(../blocks/form/__controls/form__controls.css);
+
 
 /* Страничка "Выберите категорию" */
 @import url(../blocks/category/__input-container/category__input-container.css);

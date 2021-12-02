@@ -1,0 +1,16 @@
+.question-block {
+    width: 880px;
+    height: 112px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .question-block {
+        width: 360px;
+        height: 144px;
+        flex-wrap: wrap;
+    }
+}
