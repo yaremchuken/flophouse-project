@@ -1,9 +1,9 @@
-.form-input__checked {
+.form-input__value_checked {
   width: 24px;
 }
 
 @media screen and (max-width: 920px) {
-  .form-input__checked {
+  .form-input__value_checked {
     width: 20px;
   }
 }

@@ -10,59 +10,70 @@
   <body class="container">
     <div class="page">
       <header class="header">
-        <div class="header__logo-location">
+        <div class="header__bar-left">
           <div class="header__logo"></div>
-          <div class="header__location"></div>
+          <button type="button" class="button button_type_link button_place_header">
+            <img src="../images/icon_location.svg" alt="location icon" class="button__icon" />
+            Санкт-Петербург
+          </button>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">куда пойти</a>
+        <nav class="header__nav-bar">
+          <ul class="header__link-list">
+            <li class="header__list-item">
+              <button type="button" class="button button_type_link">куда пойти</button>
             </li>
-            <li>
-              <a href="#">стать участником</a>
+            <li class="header__list-item">
+              <button type="button" class="button button_type_link">стать участником</button>
             </li>
-            <li>
-              <a href="#">о фестивале</a>
+            <li class="header__list-item">
+              <button type="button" class="button button_type_link">о фестивале</button>
             </li>
           </ul>
         </nav>
+        <div class="header__user-actions">
+          <button type="button" class="button button_type_link">
+            <img src="../images/icon_heart.svg" alt="heart icon" class="button__icon" />
+            хочу пойти
+          </button>
+          <button type="button" class="button button_type_filled button_place_header">поддержать</button>
+          <button type="button" class="button button_type_burger"></button>
+        </div>
       </header>
       <main class="content">
-        <h1 class="category__title">стать участником</h1>
-        <div class="category__form-holder">
-          <p class="category__step">шаг 1 из 4</p>
-          <p class="category__heading">выберите категорию</p>
-          <form action="" name="category__form" class="category__form">
-            <fieldset class="category__input-container">
+        <h1 class="page__title">стать участником</h1>
+        <div class="page__content">
+          <p class="page__step">шаг 1 из 4</p>
+          <p class="page__heading">выберите категорию</p>
+          <form action="" name="form" class="form">
+            <fieldset class="form__input-container">
               <label class="form-input">
-                <input class="category__input-value" type="radio" name="category" value="cafe" />
+                <input class="form-input__value" type="radio" name="category" value="cafe" />
                 <span>кафе/бар/ресторан</span>
               </label>
               <label class="form-input form-input_active">
-                <input class="category__input-value category__input-value_checked" type="radio" name="category" value="lection" />
+                <input class="form-input__value form-input__value_checked" type="radio" name="category" value="master-class" />
                 <span>мастер-класс/лекция</span>
                 <img src="../images/form/checked.svg" class="form-input__checked" />
               </label>
               <label class="form-input">
-                <input class="category__input-value" type="radio" name="category" value="party" />
+                <input class="form-input__value" type="radio" name="category" value="party" />
                 <span>посиделки/вечеринка</span>
               </label>
               <label class="form-input">
-                <input class="category__input-value" type="radio" name="category" value="other" />
+                <input class="form-input__value" type="radio" name="category" value="other" />
                 <span>другое</span>
               </label>
             </fieldset>
-            <div class="category__controls">
-              <button type="button" class="form-input form-input__control">отмена</button>
-              <button type="submit" class="form-input form-input__control form-input__control_active">далее</button>
+            <div class="form__controls">
+              <button type="button" class="form-input form__control">отмена</button>
+              <button type="submit" class="form-input form__control form__control_active">далее</button>
             </div>
           </form>
         </div>
       </main>
       <footer class="footer">
         <div class="footer__container">
-          <img class="footer__image" src="../images/footer_illustration.svg" alt="Ночлежка">
+          <img class="footer__image" src="../images/footer_illustration.svg" alt="Ночлежка" />
           <div class="footer__organizer">
             <h3 class="footer__title">организатор:</h3>
             <ul class="footer__links">
@@ -91,19 +102,19 @@
           <div class="footer__social">
             <h3 class="footer__title">мы в соцсетях:</h3>
             <ul class="footer__icons">
-              <li class="footer__icon" >
-                <a href="#" >
-                  <img src="../images/footer_facebook-icon.svg" alt="facebook">
-                </a>
-              </li>
-              <li class="footer__icon" >
+              <li class="footer__icon">
                 <a href="#">
-                  <img src="../images/footer_instagram-icon.svg" alt="instagram">
+                  <img src="../images/footer_facebook-icon.svg" alt="facebook" />
                 </a>
               </li>
               <li class="footer__icon">
-                <a  href="#">
-                  <img src="../images/footer_vk-icon.svg" alt="vkontakte">
+                <a href="#">
+                  <img src="../images/footer_instagram-icon.svg" alt="instagram" />
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a href="#">
+                  <img src="../images/footer_vk-icon.svg" alt="vkontakte" />
                 </a>
               </li>
             </ul>

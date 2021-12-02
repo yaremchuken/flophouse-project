@@ -1,5 +1,6 @@
-.form-input__control {
+.form__control {
   width: 205px;
   align-self: center;
   justify-content: center;
+  background-color: transparent;
 }

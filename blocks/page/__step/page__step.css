@@ -1,4 +1,4 @@
-.category__step {
+.page__step {
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 920px) {
-  .category__step {
+  .page__step {
     font-size: 16px;
     line-height: 20px;
   }
