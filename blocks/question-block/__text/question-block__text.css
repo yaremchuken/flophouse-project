@@ -1,0 +1,24 @@
+.question-block__text {
+    width: 417px;
+    font-family: TT Firs Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+    .question-block__text {
+        width: 320px;
+        margin: 0 20px;
+        font-family: TT Firs Neue;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;   
+    }
+}
