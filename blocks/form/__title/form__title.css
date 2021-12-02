@@ -1,4 +1,4 @@
-.category__title {
+.form__title {
   padding: 40px;
   margin: 0;
   font-size: 96px;
@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 920px) {
-  .category__title {
+  .form__title {
     display: none;
   }
 }

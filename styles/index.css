@@ -23,10 +23,6 @@
 @import url(../blocks/button/_place/button_place_header.css);
 @import url(../blocks/button/__icon/button__icon.css);
 
-
-@import url(../blocks/content/content.css);
-
-@import url(../blocks/footer/footer.css);
 /* Страничка "Стать участником" */
 @import url(../blocks/content/content.css);
 @import url(../blocks/how-to-participate/how-to-participate.css);
@@ -38,23 +34,33 @@
 @import url(../blocks/question-block/__text/question-block__text.css);
 @import url(../blocks/form-button/form-button.css);
 
+/*Общие стили для элементов форм*/
+@import url(../blocks/form/__form/form__form.css);
+@import url(../blocks/form/__heading/form__heading.css);
+@import url(../blocks/form/__input-container/form__input-container.css);
+@import url(../blocks/form/__step/form__step.css);
+@import url(../blocks/form/__title/form__title.css);
+@import url(../blocks/form/__controls/form__controls.css);
+
 
 /* Страничка "Выберите категорию" */
+@import url(../blocks/category/__input-container/category__input-container.css);
+@import url(../blocks/category/__form-holder/category__form-holder.css);
+@import url(../blocks/category/__input-value/category__input-value.css);
 
-@import url(../blocks/page/category/__form/category__form.css);
-@import url(../blocks/page/category/__heading/category__heading.css);
-@import url(../blocks/page/category/__input-container/category__input-container.css);
-@import url(../blocks/page/category/__step/category__step.css);
-@import url(../blocks/page/category/__title/category__title.css);
-@import url(../blocks/page/category/__form-holder/category__form-holder.css);
-@import url(../blocks/page/category/__input-value/category__input-value.css);
-@import url(../blocks/page/category/__controls/category__controls.css);
 
 @import url(../blocks/form-input/form-input.css);
 @import url(../blocks/form-input/_active/form-input_active.css);
 @import url(../blocks/form-input/__checked/form-input__checked.css);
 @import url(../blocks/form-input/__control/form-input__control.css);
 @import url(../blocks/form-input/__control/_active/form-input__control_active.css);
+
+/* Форма "заполните форму для кафе/бар/ресторан" */
+@import url(../blocks/form/__city-list/form-input__city-list.css);
+@import url(../blocks/form/__field/form__field.css);
+@import url(../blocks/form/__label/form__label.css);
+@import url(../blocks/form/__container/_line/form__container_line_bottom.css);
+@import url(../blocks/form/__container/_place/form__container_place_cafe.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);
