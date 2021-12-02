@@ -42,19 +42,19 @@
       </header>
 
       <main class="content">
-        <h1 class="category__title">стать участником</h1>
+        <h1 class="form__title">стать участником</h1>
         <div class="form__container_place_cafe">
-          <p class="category__step">шаг 2 из 4</p>
-          <p class="category__heading">Заполните форму</p>
-          <form action="" name="category__form" class="category__form">
-            <fieldset class="category__input-container form__container_line_bottom">
-              <label class="form-input form-input_active">
+          <p class="form__step">шаг 2 из 4</p>
+          <p class="form__heading">Заполните форму</p>
+          <form class="form__form" action="" name="category__form"> 
+            <fieldset class="form__input-container form__container_line_bottom">
+              <label class="form-input form-input_active">  <!--Нужно что то придумать с form-input и form__input, т.к. form__input просто форму поля даёт и рамочку, думаю переименовать стоит form-input-->
                 <input class="category__input-value" type="radio" name="category" value="cafe" />
                 <span>кафе/бар/ресторан</span>
               </label>
             </fieldset>
             
-            <fieldset class="category__input-container">
+            <fieldset class="form__input-container">
               <label class="form__label">город</label>
               <select class="form__input form-input__city-list">
                 <option value="" style="display:none">Выберите из списка</option>
@@ -71,7 +71,7 @@
               <textarea class="form__input formCafe__description" name="" id="cafe-description" placeholder="Укажите что из меню будет принимать участие в акции" cols="30" rows="6"></textarea>
             </fieldset>
 
-            <div class="category__controls">
+            <div class="form__controls">
               <button type="button" class="form-input form-input__control">отмена</button>
               <button type="submit" class="form-input form-input__control form-input__control_active">далее</button>
             </div>
