@@ -42,31 +42,37 @@
   
   
       </header>
+
       <main class="content">
         <h1 class="form__title">стать участником</h1>
-        <div class="category__form-holder">
-          <p class="form__step">шаг 1 из 4</p>
-          <p class="form__heading">выберите категорию</p>
-          <form class="form__form" action="" name="category__form">
-            <fieldset class="form__input-container">
-              <label class="form-input">
+        <div class="form__container_place_cafe">
+          <p class="form__step">шаг 2 из 4</p>
+          <p class="form__heading">Заполните форму</p>
+          <form class="form__form" action="" name="category__form"> 
+            <fieldset class="form__input-container form__container_line_bottom">
+              <label class="form-input form-input_active">  <!--Нужно что то придумать с form-input и form__input, т.к. form__field просто форму поля даёт и рамочку, думаю переименовать стоит form-input-->
                 <input class="category__input-value" type="radio" name="category" value="cafe" />
                 <span>кафе/бар/ресторан</span>
               </label>
-              <label class="form-input form-input_active">
-                <input class="category__input-value category__input-value_checked" type="radio" name="category" value="lection" />
-                <span>мастер-класс/лекция</span>
-                <img src="../images/form/checked.svg" class="form-input__checked" />
-              </label>
-              <label class="form-input">
-                <input class="category__input-value" type="radio" name="category" value="party" />
-                <span>посиделки/вечеринка</span>
-              </label>
-              <label class="form-input">
-                <input class="category__input-value" type="radio" name="category" value="other" />
-                <span>другое</span>
-              </label>
             </fieldset>
+            
+            <fieldset class="form__input-container">
+              <label class="form__label">город</label>
+              <select class="form__field form-input__city-list">
+                <option value="" style="display:none">Выберите из списка</option>
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+              </select>
+              <label class="form__label" for="cafeName">название заведения</label>
+              <input class="form__field formCafe__input_type_text" id="cafeName" type="text" name="category" placeholder="введите название заведения" value="" />
+              <label class="form__label" for="contact-name">контактное лицо</label>
+              <input class="form__field formCafe__input_type_text" id="contact-name" type="text" name="category" placeholder="введите ФИО" value="" />
+              <label class="form__label" for="contact-number">телефон для связи с организатором</label>
+              <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="category" value="+7(" />    
+              <label class="form__label" for="cafe-description">описание</label>
+              <textarea class="form__field formCafe__description" name="" id="cafe-description" placeholder="Укажите что из меню будет принимать участие в акции" cols="30" rows="6"></textarea>
+            </fieldset>
+
             <div class="form__controls">
               <button type="button" class="form-input form-input__control">отмена</button>
               <button type="submit" class="form-input form-input__control form-input__control_active">далее</button>
