@@ -34,9 +34,9 @@
 @import url(../blocks/form/__controls/form__controls.css);
 
 /* Страничка "Выберите категорию" */
-@import url(../blocks/page/category/__input-container/category__input-container.css);
-@import url(../blocks/page/category/__form-holder/category__form-holder.css);
-@import url(../blocks/page/category/__input-value/category__input-value.css);
+@import url(../blocks/category/__input-container/category__input-container.css);
+@import url(../blocks/category/__form-holder/category__form-holder.css);
+@import url(../blocks/category/__input-value/category__input-value.css);
 
 
 @import url(../blocks/form-input/form-input.css);
