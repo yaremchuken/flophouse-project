@@ -11,59 +11,60 @@
     <div class="page">
       <header class="header">
         <!-- <div class="header__container"> -->
-          <div class="header__bar-left">
-            <div class="header__logo"></div>
-            <button type="button" class="button button_type_link button_place_header">
-              <img src="../images/icon_location.svg" alt="location icon" class="button__icon">
-              Санкт-Петербург
-            </button>
-          </div>
-          <nav class="header__nav-bar">
-            <ul class="header__link-list">
-              <li class="header__list-item">
-                <button type="button" class="button button_type_link">куда пойти</button>
-              </li>
-              <li class="header__list-item">
-                <button type="button" class="button button_type_link">стать участником</button>
-              </li>
-              <li class="header__list-item">
-                <button type="button" class="button button_type_link">о фестивале</button>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__user-actions">
-            <button type="button" class="button button_type_link">
-              <img src="../images/icon_heart.svg" alt="heart icon" class="button__icon">
-              хочу пойти</button>
-            <button type="button" class="button button_type_filled button_place_header">поддержать</button>
-            <button type="button" class="button button_type_burger"></button>
-          </div>
+        <div class="header__bar-left">
+          <div class="header__logo"></div>
+          <button type="button" class="button button_type_link button_place_header">
+            <img src="../images/icon_location.svg" alt="location icon" class="button__icon" />
+            Санкт-Петербург
+          </button>
+        </div>
+        <nav class="header__nav-bar">
+          <ul class="header__link-list">
+            <li class="header__list-item">
+              <button type="button" class="button button_type_link">куда пойти</button>
+            </li>
+            <li class="header__list-item">
+              <button type="button" class="button button_type_link">стать участником</button>
+            </li>
+            <li class="header__list-item">
+              <button type="button" class="button button_type_link">о фестивале</button>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user-actions">
+          <button type="button" class="button button_type_link">
+            <img src="../images/icon_heart.svg" alt="heart icon" class="button__icon" />
+            хочу пойти
+          </button>
+          <button type="button" class="button button_type_filled button_place_header">поддержать</button>
+          <button type="button" class="button button_type_burger"></button>
+        </div>
         <!-- </div> -->
-  
-  
       </header>
       <main class="content">
         <h1 class="form__title">стать участником</h1>
         <div class="category__form-holder">
           <p class="form__step">шаг 1 из 4</p>
-          <p class="form__heading">выберите категорию</p>
+          <div class="form__instruction">
+            <p class="form__heading">выберите категорию</p>
+          </div>
           <form class="form__form" action="" name="category__form">
             <fieldset class="form__input-container">
               <label class="form-input">
-                <input class="category__input-value" type="radio" name="category" value="cafe" />
+                <input class="form-input__radio" type="radio" name="category" value="cafe" />
                 <span>кафе/бар/ресторан</span>
               </label>
               <label class="form-input form-input_active">
-                <input class="category__input-value category__input-value_checked" type="radio" name="category" value="lection" />
+                <input class="form-input__radio category__input-value_checked" type="radio" name="category" value="lection" />
                 <span>мастер-класс/лекция</span>
                 <img src="../images/form/checked.svg" class="form-input__checked" />
               </label>
               <label class="form-input">
-                <input class="category__input-value" type="radio" name="category" value="party" />
+                <input class="form-input__radio" type="radio" name="category" value="party" />
                 <span>посиделки/вечеринка</span>
               </label>
               <label class="form-input">
-                <input class="category__input-value" type="radio" name="category" value="other" />
+                <input class="form-input__radio" type="radio" name="category" value="other" />
                 <span>другое</span>
               </label>
             </fieldset>
@@ -76,7 +77,7 @@
       </main>
       <footer class="footer">
         <div class="footer__container">
-          <img class="footer__image" src="../images/footer_illustration.svg" alt="Ночлежка">
+          <img class="footer__image" src="../images/footer_illustration.svg" alt="Ночлежка" />
           <div class="footer__organizer">
             <h3 class="footer__title">организатор:</h3>
             <ul class="footer__links">
@@ -105,19 +106,19 @@
           <div class="footer__social">
             <h3 class="footer__title">мы в соцсетях:</h3>
             <ul class="footer__icons">
-              <li class="footer__icon" >
-                <a href="#" >
-                  <img src="../images/footer_facebook-icon.svg" alt="facebook">
-                </a>
-              </li>
-              <li class="footer__icon" >
+              <li class="footer__icon">
                 <a href="#">
-                  <img src="../images/footer_instagram-icon.svg" alt="instagram">
+                  <img src="../images/footer_facebook-icon.svg" alt="facebook" />
                 </a>
               </li>
               <li class="footer__icon">
-                <a  href="#">
-                  <img src="../images/footer_vk-icon.svg" alt="vkontakte">
+                <a href="#">
+                  <img src="../images/footer_instagram-icon.svg" alt="instagram" />
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a href="#">
+                  <img src="../images/footer_vk-icon.svg" alt="vkontakte" />
                 </a>
               </li>
             </ul>

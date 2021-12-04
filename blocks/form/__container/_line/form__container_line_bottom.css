@@ -1,4 +1,5 @@
 .form__container_line_bottom {
-  border-bottom: 1px solid #EBE9ED;
-  
+  padding-bottom: 19px;
+  margin-bottom: -10px;
+  border-bottom: 1px solid #ebe9ed;
 }
