@@ -41,35 +41,82 @@
         </div>
         <!-- </div> -->
       </header>
+
       <main class="content">
         <h1 class="form__title">стать участником</h1>
         <div class="form__container">
-          <p class="form__step">шаг 1 из 4</p>
+          <p class="form__step">шаг 2 из 4</p>
           <div class="form__instruction">
-            <p class="form__heading">выберите категорию</p>
+            <p class="form__heading">заполните форму</p>
+            <div class="form__paragraphs">
+              <p class="form__paragraph">Организуйте свою посиделку, вечеринку или концерт.</p>
+              <p class="form__paragraph">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
+              <p class="form__paragraph">Установите пожертвование, например кусочек пирога за любую комфортную сумму.</p>
+            </div>
           </div>
           <form class="form__form" action="" name="category__form">
-            <fieldset class="form__input-container">
-              <label class="form-input">
-                <input class="form-input__radio" type="radio" name="category" value="cafe" />
-                <span>кафе/бар/ресторан</span>
-              </label>
+            <fieldset class="form__input-container form__container_line_bottom">
               <label class="form-input form-input_active">
-                <input class="form-input__radio category__input-value_checked" type="radio" name="category" value="lection" />
-                <span>мастер-класс/лекция</span>
-                <img src="../images/form/checked.svg" class="form-input__checked" />
-              </label>
-              <label class="form-input">
-                <input class="form-input__radio" type="radio" name="category" value="party" />
-                <span>посиделки/вечеринка</span>
-              </label>
-              <label class="form-input">
                 <input class="form-input__radio" type="radio" name="category" value="other" />
                 <span>другое</span>
+                <img src="../images/form/checked.svg" class="form-input__checked" />
               </label>
             </fieldset>
+
+            <fieldset class="form__labeled-container">
+              <div class="form__unit">
+                <label class="form__label">город</label>
+                <select class="form__field form__list">
+                  <option value="" style="display: none">выберите из списка</option>
+                  <option>Москва</option>
+                  <option>Санкт-Петербург</option>
+                </select>
+              </div>
+
+              <div class="form__unit">
+                <label class="form__label" for="cafeName">название мероприятия</label>
+                <input
+                  class="form__field formCafe__input_type_text"
+                  id="cafeName"
+                  type="text"
+                  name="category"
+                  placeholder="введите название мероприятия"
+                  value=""
+                />
+              </div>
+
+              <div class="form__unit">
+                <label class="form__label" for="event-date">дата проведения</label>
+                <input
+                  class="form__field formCafe__input_type_text"
+                  id="event-date"
+                  type="text"
+                  name="event-date"
+                  placeholder="укажите дату в формате дд.мм.гггг"
+                  value=""
+                />
+              </div>
+
+              <div class="form__unit">
+                <label class="form__label" for="contact-name">контактное лицо</label>
+                <input
+                  class="form__field formCafe__input_type_text"
+                  id="contact-name"
+                  type="text"
+                  name="category"
+                  placeholder="введите ФИО"
+                  value=""
+                />
+              </div>
+
+              <div class="form__unit">
+                <label class="form__label" for="contact-number">номер телефона для связи с организатором</label>
+                <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="category" value="+7(" />
+              </div>
+            </fieldset>
+
             <div class="form__controls">
-              <button type="button" class="form-input form-input__control">отмена</button>
+              <button type="button" class="form-input form-input__control">назад</button>
               <button type="submit" class="form-input form-input__control form-input__control_active">далее</button>
             </div>
           </form>
