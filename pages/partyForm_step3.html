@@ -55,10 +55,10 @@
           <form class="form__form" action="" name="category__form">
             <fieldset class="form__labeled-container">
               <div class="form__unit">
-                <label class="form__label" for="cafeClock">время проведения</label>
+                <label class="form__label" for="partyClock">время проведения</label>
                 <input
                   class="form__field formCafe__input_type_text"
-                  id="cafeClock"
+                  id="partyClock"
                   type="text"
                   name="category"
                   placeholder="например: 18:00-22:00"
@@ -66,10 +66,10 @@
                 />
               </div>
               <div class="form__unit">
-                <label class="form__label" for="cafeAdress">адрес проведения</label>
+                <label class="form__label" for="partyAdress">адрес проведения</label>
                 <input
                   class="form__field formCafe__input_type_text"
-                  id="cafeAdress"
+                  id="partyAdress"
                   type="text"
                   name="category"
                   placeholder="каждый адрес с новой строки"
@@ -92,12 +92,27 @@
                 />
               </div>
               <div class="form__unit">
-                <label class="form__label" for="cafe-description">описание</label>
+                <label class="form__label" for="contact-website">ссылка на сайт</label>
+                <input class="form__field formCafe__input_type_number" id="contact-website" type="text" name="category" value="https://" />
+              </div>
+              <div class="form__unit">
+                <label class="form__label" for="partyLinks">ссылки на соцсети</label>
+                <input
+                  class="form__field formCafe__input_type_text"
+                  id="partyLinks"
+                  type="text"
+                  name="category"
+                  placeholder="каждую ссылку с новой строки"
+                  value=""
+                />
+              </div>
+              <div class="form__unit">
+                <label class="form__label" for="party-description">описание</label>
                 <textarea
                   class="form__field form-input form__textarea"
                   name=""
-                  id="cafe-description"
-                  placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"
+                  id="party-description"
+                  placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"
                   cols="30"
                   rows="6"
                 ></textarea>
