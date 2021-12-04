@@ -1,0 +1,47 @@
+
+
+.form__button_type_submit::after {
+  display: none;
+  visibility: hidden;
+  content: "продолжить";
+  color: #fff;
+  height: 50px;
+  border: 1px solid #7100FF;
+  border-radius: 25px;
+  align-self: center;
+  justify-content: center;
+  background-color: #7100FF;
+  padding: 12px 55px;
+  height: min-content;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__button_type_submit::before {
+  visibility: visible;
+  display: block;
+  content: "далее";
+  color: #fff;
+  height: 50px;
+  border: 1px solid #7100FF;
+  border-radius: 25px;
+  align-self: center;
+  justify-content: center;
+  background-color: #7100FF;
+  padding: 14px 78px;
+  height: min-content;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 920px) {
+  .form__button_type_submit::after {
+    display: block;
+    visibility: visible;
+  }
+
+  .form__button_type_submit::before {
+    display: none;
+    visibility: hidden;
+  }
+}
