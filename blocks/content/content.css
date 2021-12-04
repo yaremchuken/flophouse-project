@@ -1,6 +1,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  color: #3b3748;
 }
 
 @media screen and (max-width: 920px) {

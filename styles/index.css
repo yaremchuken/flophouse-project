@@ -17,7 +17,7 @@
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/_type/button_type_link.css);
 @import url(../blocks/button/_type/button_type_filled.css);
-/* @import url(../blocks/button/_type/button_type_outlined.css); */  /* используется только в формах */
+/* @import url(../blocks/button/_type/button_type_outlined.css); */ /* используется только в формах */
 @import url(../blocks/button/_type/button_type_burger.css);
 
 @import url(../blocks/button/_place/button_place_header.css);
@@ -41,26 +41,35 @@
 @import url(../blocks/form/__step/form__step.css);
 @import url(../blocks/form/__title/form__title.css);
 @import url(../blocks/form/__controls/form__controls.css);
-
+@import url(../blocks/form/__field/form__field.css);
+@import url(../blocks/form/__label/form__label.css);
+@import url(../blocks/form/__instruction/form__instruction.css);
+@import url(../blocks/form/__list/form__list.css);
+@import url(../blocks/form/__paragraphs/form__paragraphs.css);
+@import url(../blocks/form/__paragraph/form__paragraph.css);
+@import url(../blocks/form/__radio-block/form__radio-block.css);
+@import url(../blocks/form/__unit/form__unit.css);
+@import url(../blocks/form/__labeled-container/form__labeled-container.css);
+@import url(../blocks/form/__radio-unit/form__radio-unit.css);
+@import url(../blocks/form/__textarea/form__textarea.css);
 
 /* Страничка "Выберите категорию" */
-@import url(../blocks/category/__input-container/category__input-container.css);
 @import url(../blocks/category/__form-holder/category__form-holder.css);
-@import url(../blocks/category/__input-value/category__input-value.css);
-
 
 @import url(../blocks/form-input/form-input.css);
 @import url(../blocks/form-input/_active/form-input_active.css);
 @import url(../blocks/form-input/__checked/form-input__checked.css);
 @import url(../blocks/form-input/__control/form-input__control.css);
 @import url(../blocks/form-input/__control/_active/form-input__control_active.css);
+@import url(../blocks/form-input/__radio/form-input__radio.css);
 
 /* Форма "заполните форму для кафе/бар/ресторан" */
-@import url(../blocks/form/__city-list/form-input__city-list.css);
-@import url(../blocks/form/__field/form__field.css);
-@import url(../blocks/form/__label/form__label.css);
 @import url(../blocks/form/__container/_line/form__container_line_bottom.css);
 @import url(../blocks/form/__container/_place/form__container_place_cafe.css);
+@import url(../blocks/form/__container/_place/form__container_place_master-class.css);
+
+/* Форма "заполните форму для мастер-класс/лекция" */
+@import url(../blocks/form/__container/_place/form__container_place_master-class.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);
