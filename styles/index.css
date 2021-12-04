@@ -67,10 +67,13 @@
 @import url(../blocks/form/__container/_line/form__container_line_bottom.css);
 @import url(../blocks/form/__container/_place/form__container_place_cafe.css);
 @import url(../blocks/form/__container/_place/form__container_place_master-class.css);
+@import url(../blocks/form/__city-list/form__city-list.css);
 
 /* Форма "заполните форму для мастер-класс/лекция" */
 @import url(../blocks/form/__container/_place/form__container_place_master-class.css);
 
+/* Форма "заполните форму для посиделки/вечеринка" */
+@import url(../blocks/form/__radio-subtitle/form__radio-subtitle.css);
 /* footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);
