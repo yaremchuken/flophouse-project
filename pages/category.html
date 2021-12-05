@@ -48,31 +48,38 @@
           <div class="form__instruction">
             <p class="form__heading">выберите категорию</p>
           </div>
-          <form class="form__form" action="" name="category__form">
+          <form class="form__form" id="categoryForm" name="category__form">
             <fieldset class="form__input-container">
-              <label class="form-input">
-                <input class="form-input__radio" type="radio" name="category" value="cafe" />
+              <label class="form-input radio-button form-input_active">
+                <input class="form-input__radio" type="radio" name="category" value="cafe" checked />
                 <span>кафе/бар/ресторан</span>
+                <div class="form-input__checker form-input__checker_checked"></div>
               </label>
-              <label class="form-input form-input_active">
-                <input class="form-input__radio category__input-value_checked" type="radio" name="category" value="lection" />
+              <label class="form-input radio-button">
+                <input class="form-input__radio" type="radio" name="category" value="master-class" />
                 <span>мастер-класс/лекция</span>
-                <img src="../images/form/checked.svg" class="form-input__checked" />
+                <div class="form-input__checker"></div>
               </label>
-              <label class="form-input">
+              <label class="form-input radio-button">
                 <input class="form-input__radio" type="radio" name="category" value="party" />
                 <span>посиделки/вечеринка</span>
+                <div class="form-input__checker"></div>
               </label>
-              <label class="form-input">
+              <label class="form-input radio-button">
                 <input class="form-input__radio" type="radio" name="category" value="other" />
                 <span>другое</span>
+                <div class="form-input__checker"></div>
               </label>
             </fieldset>
           </form>
         </div>
         <div class="form__controls">
-          <button type="button" class="form__button_type_back   form-input form-input__control">отмена</button>
-          <button type="submit" class="form__button_type_submit form-input form-input__control form-input__control_active"></button>
+          <button type="button" class="form__button_type_back form-input form-input__control" onclick="location.href='../index.html';">отмена</button>
+          <button
+            type="submit"
+            form="categoryForm"
+            class="form__button_type_submit form-input form-input__control form-input__control_active"
+          ></button>
         </div>
       </main>
       <footer class="footer">
@@ -126,5 +133,6 @@
         </div>
       </footer>
     </div>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>

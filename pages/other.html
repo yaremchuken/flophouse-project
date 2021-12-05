@@ -54,12 +54,12 @@
               <p class="form__paragraph">Установите пожертвование, например кусочек пирога за любую комфортную сумму.</p>
             </div>
           </div>
-          <form class="form__form" action="" name="category__form">
+          <form class="form__form" id="other" action="other-form_step3.html" name="category__form">
             <fieldset class="form__input-container form__container_line_bottom">
               <label class="form-input form-input_active">
                 <input class="form-input__radio" type="radio" name="category" value="other" />
                 <span>другое</span>
-                <img src="../images/form/checked.svg" class="form-input__checked" />
+                <div class="form-input__checker form-input__checker_checked"></div>
               </label>
             </fieldset>
 
@@ -114,12 +114,11 @@
                 <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="category" value="+7(" />
               </div>
             </fieldset>
-
           </form>
         </div>
         <div class="form__controls">
-          <button type="button" class="form-input form-input__control">назад</button>
-          <button type="submit" class="form-input form-input__control form-input__control_active">далее</button>
+          <button type="button" class="form-input form-input__control" onclick="location.href='../pages/category.html';">назад</button>
+          <button type="submit" form="other" class="form__button_type_submit form-input form-input__control form-input__control_active"></button>
         </div>
       </main>
       <footer class="footer">
