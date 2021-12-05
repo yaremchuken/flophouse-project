@@ -2,10 +2,14 @@
   display: flex;
   flex-direction: column;
   color: #3b3748;
+  max-width: 1440px;
+  width: 69vw;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 920px) {
   .content {
-    height: calc(100vh - 88px);
+    margin: 0;
+    width: auto;
   }
 }

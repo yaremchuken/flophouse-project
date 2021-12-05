@@ -37,6 +37,7 @@
 @import url(../blocks/form-button/form-button.css);
 
 /* Общие стили для элементов форм*/
+@import url(../blocks/form/__content/form__content.css);
 @import url(../blocks/form/__container/form__container.css);
 @import url(../blocks/form/__container/_line/form__container_line_bottom.css);
 @import url(../blocks/form/__form/form__form.css);
@@ -51,6 +52,7 @@
 @import url(../blocks/form/__list/form__list.css);
 @import url(../blocks/form/__paragraphs/form__paragraphs.css);
 @import url(../blocks/form/__paragraph/form__paragraph.css);
+@import url(../blocks/form/__paragraph/_list/form__paragraph_list.css);
 @import url(../blocks/form/__radio-block/form__radio-block.css);
 @import url(../blocks/form/__unit/form__unit.css);
 @import url(../blocks/form/__labeled-container/form__labeled-container.css);
@@ -84,6 +86,3 @@
 @import url(../blocks/footer/__social/footer__social.css);
 @import url(../blocks/footer/__title/footer__title.css);
 @import url(../blocks/footer/__email/footer__email.css);
-
-
-
