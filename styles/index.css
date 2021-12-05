@@ -56,6 +56,9 @@
 @import url(../blocks/form/__labeled-container/form__labeled-container.css);
 @import url(../blocks/form/__radio-unit/form__radio-unit.css);
 @import url(../blocks/form/__textarea/form__textarea.css);
+@import url(../blocks/form/__button/_type/form__button_type_submit.css);
+@import url(../blocks/form/__button/_type/form__button_type_back.css);
+@import url(../blocks/form/__radio-subtitle/form__radio-subtitle.css);
 
 /* Инпуты формы */
 @import url(../blocks/form-input/form-input.css);
