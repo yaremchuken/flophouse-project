@@ -1,3 +1,8 @@
 .form__textarea {
   height: 104px;
+  outline: none !important;
+}
+
+.form__textarea:focus {
+  border: 2px solid #7100FF;
 }
