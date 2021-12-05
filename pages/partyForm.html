@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гедонизмфест</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body class="container">
+    <div class="page">
+      <header class="header">
+        <!-- <div class="header__container"> -->
+          <div class="header__bar-left">
+            <div class="header__logo"></div>
+            <button type="button" class="button button_type_link button_place_header">
+              <img src="../images/icon_location.svg" alt="location icon" class="button__icon">
+              Санкт-Петербург
+            </button>
+          </div>
+          <nav class="header__nav-bar">
+            <ul class="header__link-list">
+              <li class="header__list-item">
+                <button type="button" class="button button_type_link">куда пойти</button>
+              </li>
+              <li class="header__list-item">
+                <button type="button" class="button button_type_link">стать участником</button>
+              </li>
+              <li class="header__list-item">
+                <button type="button" class="button button_type_link">о фестивале</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__user-actions">
+            <button type="button" class="button button_type_link">
+              <img src="../images/icon_heart.svg" alt="heart icon" class="button__icon">
+              хочу пойти</button>
+            <button type="button" class="button button_type_filled button_place_header">поддержать</button>
+            <button type="button" class="button button_type_burger"></button>
+          </div>
+        <!-- </div> -->
+  
+  
+      </header>
+
+      <main class="content">
+        <h1 class="form__title">стать участником</h1>
+        <div class="form__container_place_cafe">
+          <p class="form__step">шаг 2 из 4</p>
+          <div class="form__instruction">
+            <p class="form__heading">заполните форму</p>
+            <div class="form__paragraphs">
+              <p class="form__paragraph">Организуйте свою посиделку, вечеринку или концерт.</p>
+              <p class="form__paragraph">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
+              <p class="form__paragraph">Установите пожертвование, например кусочек пирога за любую комфортную сумму</p>
+            </div>
+          </div>
+          <form class="form__form" action="" name="category__form"> 
+            <fieldset class="form__input-container form__container_line_bottom">
+              <label class="form-input form-input_active">
+                <input class="form-input__radio" type="radio" name="category" value="master-class" />
+                <span>посиделки/вечеринка</span>
+                <img src="../images/form/checked.svg" class="form-input__checked" />
+              </label>
+            </fieldset>
+
+            <fieldset class="form__input-container">
+              <label class="form__label">город</label>
+              <select class="form__field form__city-list">
+                <option value="" style="display:none">Выберите из списка</option>
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+              </select>
+              <label class="form__label" for="cafeName">название мероприятия</label>
+              <input class="form__field formCafe__input_type_text" id="cafeName" type="text" name="partyForm" placeholder="введите название" value="" />
+            </fieldset>
+            <fieldset class="form__radio-block form__radio-block_container">
+              <label class="form__radio-unit">
+                <img src="../images/form/radio_active.svg" alt="онлайн формат" />
+                <input class="form-input__radio" type="radio" name="lection-form" value="online" />
+                <span>открытое мероприятие</span>
+              </label>
+              <p class="form__radio-subtitle">адрес отобразим в карточке события</p>
+              <label class="form__radio-unit">
+                <img src="../images/form/radio_inactive.svg" alt="оффлайн формат" />
+                <input class="form-input__radio" type="radio" name="lection-form" value="offline" />
+                <span>закрытое мероприятие</span>
+              </label>
+              <p class="form__radio-subtitle">адрес увидят только, те кому вы оправите ссылку на событие</p>
+            </fieldset>
+            
+            <fieldset class="form__input-container">
+              <label class="form__label" for="cafeName">дата проведения</label>
+              <input class="form__field formCafe__input_type_text" id="cafeName" type="text" name="partyForm" placeholder="укажите дату в формате дд.мм.гггг" value="" />
+              <label class="form__label" for="contact-name">контактное лицо</label>
+              <input class="form__field formCafe__input_type_text" id="contact-name" type="text" name="partyForm" placeholder="введите ФИО" value="" />
+              <label class="form__label" for="contact-number">телефон для связи с организатором</label>
+              <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="partyForm" value="+7(" />    
+            </fieldset>
+          </form>
+        </div>
+        <div class="form__controls">
+          <button type="button" class="form-input form-input__control">назад</button>
+          <button type="submit" class="form-input form-input__control form-input__control_active">далее</button>
+        </div>
+      </main>
+
+
+      <footer class="footer">
+        <div class="footer__container">
+          <img class="footer__image" src="../images/footer_illustration.svg" alt="Ночлежка">
+          <div class="footer__organizer">
+            <h3 class="footer__title">организатор:</h3>
+            <ul class="footer__links">
+              <li>
+                <a class="footer__link" href="#">Ночлежка</a>
+              </li>
+              <li>
+                <a class="footer__email" href="#">info@hedonismfest.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__partners">
+            <h3 class="footer__title">сделано с любовью:</h3>
+            <ul class="footer__links">
+              <li>
+                <a class="footer__link" href="#">Fastsol Digital</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">shishki.collective</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">студентами Яндекс.Практикума</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social">
+            <h3 class="footer__title">мы в соцсетях:</h3>
+            <ul class="footer__icons">
+              <li class="footer__icon" >
+                <a href="#" >
+                  <img src="../images/footer_facebook-icon.svg" alt="facebook">
+                </a>
+              </li>
+              <li class="footer__icon" >
+                <a href="#">
+                  <img src="../images/footer_instagram-icon.svg" alt="instagram">
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a  href="#">
+                  <img src="../images/footer_vk-icon.svg" alt="vkontakte">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

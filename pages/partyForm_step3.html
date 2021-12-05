@@ -44,79 +44,81 @@
 
       <main class="content">
         <h1 class="form__title">стать участником</h1>
-        <div class="form__container">
-          <p class="form__step">шаг 2 из 4</p>
+        <div class="form__container_place_cafe">
+          <p class="form__step">шаг 3 из 4</p>
           <div class="form__instruction">
-            <p class="form__heading">заполните форму</p>
+            <p class="form__heading">укажите контакты и часы работы</p>
             <div class="form__paragraphs">
-              <p class="form__paragraph">Для участия вы можете выбрать:</p>
-              <ul>
-                <li>определенную позицию из меню</li>
-                <li>группу позиций</li>
-                <li>процент от продаж определенных позиций или всего меню</li>
-              </ul>
+              <p class="form__paragraph">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
             </div>
           </div>
           <form class="form__form" action="" name="category__form">
-            <fieldset class="form__input-container form__container_line_bottom">
-              <label class="form-input form-input_active">
-                <input class="form-input__radio" type="radio" name="category" value="cafe" />
-                <span>кафе/бар/ресторан</span>
-              </label>
-            </fieldset>
-
             <fieldset class="form__labeled-container">
               <div class="form__unit">
-                <label class="form__label">город</label>
-                <select class="form__field form__list">
-                  <option value="" style="display: none">выберите из списка</option>
-                  <option>Москва</option>
-                  <option>Санкт-Петербург</option>
-                </select>
-              </div>
-
-              <div class="form__unit">
-                <label class="form__label" for="cafeName">название заведения</label>
+                <label class="form__label" for="partyClock">время проведения</label>
                 <input
                   class="form__field formCafe__input_type_text"
-                  id="cafeName"
+                  id="partyClock"
                   type="text"
                   name="category"
-                  placeholder="введите название заведения"
+                  placeholder="например: 18:00-22:00"
                   value=""
                 />
               </div>
-
               <div class="form__unit">
-                <label class="form__label" for="contact-name">контактное лицо</label>
+                <label class="form__label" for="partyAdress">адрес проведения</label>
                 <input
                   class="form__field formCafe__input_type_text"
-                  id="contact-name"
+                  id="partyAdress"
                   type="text"
                   name="category"
-                  placeholder="введите ФИО"
+                  placeholder="каждый адрес с новой строки"
                   value=""
                 />
               </div>
-
               <div class="form__unit">
-                <label class="form__label" for="contact-number">телефон для связи с организатором</label>
+                <label class="form__label" for="contact-number">номер телефона для бронирования</label>
                 <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="category" value="+7(" />
               </div>
-
               <div class="form__unit">
-                <label class="form__label" for="cafe-description">описание</label>
+                <label class="form__label" for="contact-price">стоимость участия</label>
+                <input
+                  class="form__field formCafe__input_type_text"
+                  id="contact-price"
+                  type="text"
+                  name="category"
+                  placeholder="укажите стоимость в рублях"
+                  value=""
+                />
+              </div>
+              <div class="form__unit">
+                <label class="form__label" for="contact-website">ссылка на сайт</label>
+                <input class="form__field formCafe__input_type_number" id="contact-website" type="text" name="category" value="https://" />
+              </div>
+              <div class="form__unit">
+                <label class="form__label" for="partyLinks">ссылки на соцсети</label>
+                <input
+                  class="form__field formCafe__input_type_text"
+                  id="partyLinks"
+                  type="text"
+                  name="category"
+                  placeholder="каждую ссылку с новой строки"
+                  value=""
+                />
+              </div>
+              <div class="form__unit">
+                <label class="form__label" for="party-description">описание</label>
                 <textarea
                   class="form__field form-input form__textarea"
                   name=""
-                  id="cafe-description"
-                  placeholder="Укажите что из меню будет принимать участие в акции"
+                  id="party-description"
+                  placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"
                   cols="30"
                   rows="6"
                 ></textarea>
               </div>
             </fieldset>
-            <!--перенести снопки вниз, убрать абсолют у кнопок, убрать высоту 100% у form__container_place_cafe-->
+
           </form>
         </div>
         <div class="form__controls">

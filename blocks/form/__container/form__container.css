@@ -1,18 +1,15 @@
-.category__form-holder {
+.form__container {
   padding: 0;
-  margin: 0 auto 220px;
+  margin: 0 auto 80px;
   display: grid;
-
   grid-template-columns: minmax(min-content, 309px) minmax(min-content, 531px);
-
   column-gap: 40px;
   row-gap: 12px;
 }
 
 @media screen and (max-width: 920px) {
-  .category__form-holder {
+  .form__container {
     margin: 20px;
-    height: 100%;
     display: flex;
     flex-direction: column;
   }
