@@ -45,88 +45,90 @@
 
       <main class="content">
         <h1 class="form__title">стать участником</h1>
-        <div class="form__container">
-          <p class="form__step">шаг 2 из 4</p>
-          <div class="form__instruction">
-            <p class="form__heading">укажите контакты и часы работы</p>
-            <div class="form__paragraphs">
-              <p class="form__paragraph">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
+        <div class="form__content">
+          <div class="form__container">
+            <p class="form__step">шаг 2 из 4</p>
+            <div class="form__instruction">
+              <p class="form__heading">укажите контакты и часы работы</p>
+              <div class="form__paragraphs">
+                <p class="form__paragraph">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
+              </div>
             </div>
+            <form class="form__form" id="cafeContacts" name="category__form">
+              <fieldset class="form__labeled-container">
+                <div class="form__unit">
+                  <label class="form__label">часы работы заведения</label>
+                  <input class="form__field" id="cafe-work-hours" type="text" name="category" placeholder="например: 10:00-13:00, 13:00-19:00" />
+                </div>
+
+                <div class="form__unit">
+                  <label class="form__label" for="cafeName">адрес заведения</label>
+                  <input
+                    class="form__field formCafe__input_type_text"
+                    id="cafe-address"
+                    type="text"
+                    name="category"
+                    placeholder="каждый адрес с новой строки"
+                    value=""
+                  />
+                </div>
+
+                <div class="form__unit">
+                  <label class="form__label" for="contact-name">контактное лицо</label>
+                  <input
+                    class="form__field formCafe__input_type_text"
+                    id="contact-name"
+                    type="text"
+                    name="category"
+                    placeholder="введите ФИО"
+                    value=""
+                  />
+                </div>
+
+                <div class="form__unit">
+                  <label class="form__label" for="contact-number">номер телефона заведения</label>
+                  <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="category" value="+7(" />
+                </div>
+
+                <div class="form__unit">
+                  <label class="form__label" for="contact-number">ссылка на сайт</label>
+                  <input class="form__field formCafe__input_type_text" id="cafe-site" type="text" name="category" value="https://" />
+                </div>
+
+                <div class="form__unit">
+                  <label class="form__label" for="contact-number">ссылки на соцсети</label>
+                  <input
+                    class="form__field formCafe__input_type_text"
+                    id="cafe-social-links"
+                    type="text"
+                    name="category"
+                    placeholder="каждую ссылку с новой строки"
+                    value=""
+                  />
+                </div>
+
+                <div class="form__unit">
+                  <label class="form__label" for="cafe-description">описание</label>
+                  <textarea
+                    class="form__field form-input form__textarea"
+                    name=""
+                    id="cafe-description"
+                    placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"
+                    cols="30"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </fieldset>
+            </form>
           </div>
-          <form class="form__form" id="cafeContacts" name="category__form">
-            <fieldset class="form__labeled-container">
-              <div class="form__unit">
-                <label class="form__label">часы работы заведения</label>
-                <input class="form__field" id="cafe-work-hours" type="text" name="category" placeholder="например: 10:00-13:00, 13:00-19:00" />
-              </div>
-
-              <div class="form__unit">
-                <label class="form__label" for="cafeName">адрес заведения</label>
-                <input
-                  class="form__field formCafe__input_type_text"
-                  id="cafe-address"
-                  type="text"
-                  name="category"
-                  placeholder="каждый адрес с новой строки"
-                  value=""
-                />
-              </div>
-
-              <div class="form__unit">
-                <label class="form__label" for="contact-name">контактное лицо</label>
-                <input
-                  class="form__field formCafe__input_type_text"
-                  id="contact-name"
-                  type="text"
-                  name="category"
-                  placeholder="введите ФИО"
-                  value=""
-                />
-              </div>
-
-              <div class="form__unit">
-                <label class="form__label" for="contact-number">номер телефона заведения</label>
-                <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="category" value="+7(" />
-              </div>
-
-              <div class="form__unit">
-                <label class="form__label" for="contact-number">ссылка на сайт</label>
-                <input class="form__field formCafe__input_type_text" id="cafe-site" type="text" name="category" value="https://" />
-              </div>
-
-              <div class="form__unit">
-                <label class="form__label" for="contact-number">ссылки на соцсети</label>
-                <input
-                  class="form__field formCafe__input_type_text"
-                  id="cafe-social-links"
-                  type="text"
-                  name="category"
-                  placeholder="каждую ссылку с новой строки"
-                  value=""
-                />
-              </div>
-
-              <div class="form__unit">
-                <label class="form__label" for="cafe-description">описание</label>
-                <textarea
-                  class="form__field form-input form__textarea"
-                  name=""
-                  id="cafe-description"
-                  placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"
-                  cols="30"
-                  rows="3"
-                ></textarea>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="form__controls">
-          <button type="button" class="form-input form-input__control" onclick="location.href='../pages/cafeForm.html';">назад</button>
-          <button
-            type="submit"
-            form="cafeContacts"
-            class="form__button_type_submit form-input form-input__control form-input__control_active"
-          ></button>
+          <div class="form__controls">
+            <button type="button" class="form-input form-input__control" onclick="location.href='../pages/cafeForm.html';">назад</button>
+            <button
+              type="submit"
+              form="cafeContacts"
+              class="form__button_type_submit form-input form-input__control form-input__control_active"
+            ></button>
+          </div>
         </div>
       </main>
       <footer class="footer">
