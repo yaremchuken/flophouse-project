@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   color: #3b3748;
-  /* max-width: 1440px; */
 }
 
 @media screen and (max-width: 920px) {
