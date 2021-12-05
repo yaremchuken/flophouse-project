@@ -63,10 +63,13 @@
 /* Инпуты формы */
 @import url(../blocks/form-input/form-input.css);
 @import url(../blocks/form-input/_active/form-input_active.css);
-@import url(../blocks/form-input/__checked/form-input__checked.css);
 @import url(../blocks/form-input/__control/form-input__control.css);
 @import url(../blocks/form-input/__control/_active/form-input__control_active.css);
 @import url(../blocks/form-input/__radio/form-input__radio.css);
+@import url(../blocks/form-input/__radio-icon/form-input__radio-icon.css);
+@import url(../blocks/form-input/__radio-icon/form-input__radio-icon_checked.css);
+@import url(../blocks/form-input/__checker/form-input__checker.css);
+@import url(../blocks/form-input/__checker/form-input__checker_checked.css);
 
 /* footer */
 @import url(../blocks/footer/footer.css);

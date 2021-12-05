@@ -52,7 +52,7 @@
               <p class="form__paragraph">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
             </div>
           </div>
-          <form class="form__form" action="" name="category__form">
+          <form class="form__form" id="otherContacts" name="category__form">
             <fieldset class="form__labeled-container">
               <div class="form__unit">
                 <label class="form__label" for="otherClock">время проведения</label>
@@ -103,12 +103,17 @@
                 ></textarea>
               </div>
             </fieldset>
-
           </form>
         </div>
         <div class="form__controls">
-          <button type="button" class="form__button_type_back   form-input form-input__control">назад</button>
-          <button type="submit" class="form__button_type_submit form-input form-input__control form-input__control_active"></button>
+          <button type="button" class="form__button_type_back form-input form-input__control" onclick="location.href='../pages/other.html';">
+            назад
+          </button>
+          <button
+            type="submit"
+            form="otherContacts"
+            class="form__button_type_submit form-input form-input__control form-input__control_active"
+          ></button>
         </div>
       </main>
       <footer class="footer">

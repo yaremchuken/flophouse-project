@@ -57,11 +57,12 @@
               </ul>
             </div>
           </div>
-          <form class="form__form" action="" name="category__form">
+          <form class="form__form" id="cafe" action="cafe-contacts.html" name="category__form">
             <fieldset class="form__input-container form__container_line_bottom">
               <label class="form-input form-input_active">
                 <input class="form-input__radio" type="radio" name="category" value="cafe" />
                 <span>кафе/бар/ресторан</span>
+                <div class="form-input__checker form-input__checker_checked"></div>
               </label>
             </fieldset>
 
@@ -119,8 +120,20 @@
           </form>
         </div>
         <div class="form__controls">
-          <button type="button" name="category__form" class="form__button_type_back   form-input form-input__control">назад</button>
-          <button type="submit" name="category__form" class="form__button_type_submit form-input form-input__control form-input__control_active"></button>
+          <button
+            type="button"
+            name="category__form"
+            class="form__button_type_back form-input form-input__control"
+            onclick="location.href='./category.html';"
+          >
+            назад
+          </button>
+          <button
+            type="submit"
+            form="cafe"
+            name="category__form"
+            class="form__button_type_submit form-input form-input__control form-input__control_active"
+          ></button>
         </div>
       </main>
       <footer class="footer">
