@@ -4,3 +4,9 @@
   justify-content: center;
   background-color: transparent;
 }
+
+@media screen and (max-width: 980px) {
+  .form-input__control {
+    width: 45%;
+  }
+}

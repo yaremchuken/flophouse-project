@@ -34,11 +34,13 @@
 
 @media screen and (max-width: 980px) {
   .form__button_type_submit::after {
+    padding: 0;
     display: block;
     visibility: visible;
   }
 
   .form__button_type_submit::before {
+    padding: 0;
     display: none;
     visibility: hidden;
   }

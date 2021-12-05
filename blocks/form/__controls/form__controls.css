@@ -8,10 +8,13 @@
 
 @media screen and (max-width: 980px) {
   .form__controls {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 84px;
     justify-content: space-around;
     background: #fcfaf7;
     box-shadow: 0px -8px 32px rgba(59, 55, 72, 0.12);
-    margin-bottom: 0;
   }
 }
