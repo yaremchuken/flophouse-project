@@ -5,7 +5,7 @@
 ## Фукнциональность
 
 Проект реализует функиональность форм обратной связи новых участников для сайта ночлежки.
-В проекте использованы [**HTML5**](http://htmlbook.ru/html5), [**CSS3**](http://htmlbook.ru/css3), [javaScript](http://htmlbook.ru/html5).
+В проекте использованы [**HTML5**](http://htmlbook.ru/html5), [**CSS3**](http://htmlbook.ru/css3), [**javaScript**](http://htmlbook.ru/html5).
 
 ### Ссылки
 
