@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 980px) {
   .form-input__checker_checked {
     width: 20px;
   }

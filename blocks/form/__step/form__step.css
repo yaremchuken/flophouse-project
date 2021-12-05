@@ -6,7 +6,7 @@
   font-weight: 500;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 980px) {
   .form__step {
     font-size: 16px;
     line-height: 20px;

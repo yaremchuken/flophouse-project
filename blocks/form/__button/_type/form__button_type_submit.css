@@ -4,11 +4,11 @@
   content: "продолжить";
   color: #fff;
   height: 50px;
-  border: 1px solid #7100FF;
+  border: 1px solid #7100ff;
   border-radius: 25px;
   align-self: center;
   justify-content: center;
-  background-color: #7100FF;
+  background-color: #7100ff;
   padding: 0 55px;
   height: min-content;
   font-size: 16px;
@@ -21,18 +21,18 @@
   content: "далее";
   color: #fff;
   height: 50px;
-  border: 1px solid #7100FF;
+  border: 1px solid #7100ff;
   border-radius: 25px;
   align-self: center;
   justify-content: center;
-  background-color: #7100FF;
+  background-color: #7100ff;
   padding: 0 78px;
   height: min-content;
   font-size: 16px;
   line-height: 20px;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 980px) {
   .form__button_type_submit::after {
     display: block;
     visibility: visible;
