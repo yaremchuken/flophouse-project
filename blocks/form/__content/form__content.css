@@ -1,5 +1,5 @@
 .form__content {
-  margin: 0 auto;
+  margin: 0 auto 92px;
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -8,12 +8,13 @@
 @media screen and (max-width: 1210px) {
   .form__content {
     width: auto;
-    margin: 0;
+    margin: 0 0 20px;
   }
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 980px) {
   .form__content {
+    margin: 0;
     height: calc(100vh - 72px);
     justify-content: space-between;
   }

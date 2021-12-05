@@ -7,7 +7,7 @@
   row-gap: 12px;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 980px) {
   .form__container {
     margin: 20px;
     display: flex;
