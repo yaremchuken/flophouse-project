@@ -6,11 +6,15 @@ const formRadios = document.querySelectorAll('.form__radio-unit');
 if (categoryForm) {
   let currentChoice = 'cafe';
 
-  categoryForm.addEventListener('change', (e) => {
-    const value = e.target.value;
-    categoryRadios.forEach((r) => switchCategoryRadio(r, value));
-    currentChoice = value;
-  });
+  categoryRadios.forEach((radio) =>
+    radio.addEventListener('click', () => {
+      const radioInp = radio.querySelector('.form-input__radio');
+      if (radioInp) {
+        categoryRadios.forEach((r) => switchCategoryRadio(r, radioInp.value));
+        currentChoice = radioInp.value;
+      }
+    })
+  );
 
   categoryForm.addEventListener('submit', (e) => {
     e.preventDefault();
