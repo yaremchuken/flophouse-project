@@ -1,6 +1,6 @@
 .form__textarea {
   height: 104px;
-  outline: none !important;
+  outline: none;
 }
 
 .form__textarea:focus {
