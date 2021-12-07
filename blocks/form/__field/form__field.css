@@ -2,7 +2,7 @@
   border: 2px solid #96949e;
   border-radius: 25px;
   padding: 10px 22px;
-  outline:none !important;
+  outline:none;
 }
 
 .form__field:focus {
