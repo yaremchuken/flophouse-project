@@ -56,13 +56,12 @@
               </div>
             </div>
             <form class="form__form" id="other" action="other-form_step3.html" name="category__form">
-              <fieldset class="form__input-container form__container_line_bottom">
-                <label class="form-input form-input_active">
-                  <input class="form-input__radio" type="radio" name="category" value="other" />
+              <div class="form__input-container form__container_line_bottom">
+                <div class="form-input form-input_active">
                   <span>другое</span>
                   <div class="form-input__checker form-input__checker_checked"></div>
-                </label>
-              </fieldset>
+                </div>
+              </div>
 
               <fieldset class="form__labeled-container">
                 <div class="form__unit">
@@ -75,12 +74,12 @@
                 </div>
 
                 <div class="form__unit">
-                  <label class="form__label" for="cafeName">название мероприятия</label>
+                  <label class="form__label" for="cafe-name">название мероприятия</label>
                   <input
                     class="form__field formCafe__input_type_text"
-                    id="cafeName"
+                    id="cafe-name"
                     type="text"
-                    name="category"
+                    name="cafe-name"
                     placeholder="введите название мероприятия"
                     value=""
                   />
@@ -104,7 +103,7 @@
                     class="form__field formCafe__input_type_text"
                     id="contact-name"
                     type="text"
-                    name="category"
+                    name="contact-name"
                     placeholder="введите ФИО"
                     value=""
                   />
@@ -112,7 +111,7 @@
 
                 <div class="form__unit">
                   <label class="form__label" for="contact-number">номер телефона для связи с организатором</label>
-                  <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="category" value="+7(" />
+                  <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="contact-number" value="+7(" />
                 </div>
               </fieldset>
             </form>
