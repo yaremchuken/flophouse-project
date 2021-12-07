@@ -55,24 +55,23 @@
               </div>
             </div>
             <form class="form__form" id="master-class" action="master-class_Step3.html" name="category__form">
-              <fieldset class="form__input-container">
-                <label class="form-input form-input_active">
-                  <input class="form-input__radio" type="radio" name="category" value="master-class" />
+              <div class="form__input-container">
+                <div class="form-input form-input_active">
                   <span>мастер-класс/лекция</span>
                   <div class="form-input__checker form-input__checker_checked"></div>
-                </label>
-              </fieldset>
+                </div>
+              </div>
 
               <fieldset class="form__radio-block">
                 <label class="form__radio-unit">
                   <div class="form-input__radio-icon form-input__radio-icon_checked"></div>
-                  <input class="form-input__radio" type="radio" name="master-class-form" value="online" checked />
+                  <input class="form-input__radio" type="radio" id="master-class-online" name="master-class-online" value="online" checked />
                   <span>онлайн</span>
                 </label>
 
                 <label class="form__radio-unit">
                   <div class="form-input__radio-icon"></div>
-                  <input class="form-input__radio" type="radio" name="master-class-form" value="offline" />
+                  <input class="form-input__radio" type="radio" id="master-class-offline" name="master-class-offline" value="offline" />
                   <span>оффлайн</span>
                 </label>
               </fieldset>
@@ -117,7 +116,7 @@
                     class="form__field formCafe__input_type_text"
                     id="contact-name"
                     type="text"
-                    name="category"
+                    name="contact-name"
                     placeholder="введите ФИО"
                     value=""
                   />
@@ -125,7 +124,7 @@
 
                 <div class="form__unit">
                   <label class="form__label" for="contact-number">номер телефона для связи с организатором</label>
-                  <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="category" value="+7(" />
+                  <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="contact-number" value="+7(" />
                 </div>
               </fieldset>
             </form>
