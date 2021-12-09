@@ -13,8 +13,6 @@ if (categoryForm) {
       if (radioInp) {
         categoryRadios.forEach((r) => switchCategoryRadio(r, radioInp.value));
         currentChoice = radioInp.value;
-        categotySubmitBtn.classList.remove('form__button_type_back');
-        categotySubmitBtn.classList.add('form__button_type_submit');
         categotySubmitBtn.classList.add('form-input__control_active');
       }
     })
