@@ -51,10 +51,10 @@
             </div>
             <form class="form__form" id="categoryForm" name="category__form">
               <fieldset class="form__input-container">
-                <label class="form-input radio-button form-input_active">
-                  <input class="form-input__radio" type="radio" name="category_cafe" value="cafe" checked />
+                <label class="form-input radio-button">
+                  <input class="form-input__radio" type="radio" name="category_cafe" value="cafe" />
                   <span>кафе/бар/ресторан</span>
-                  <div class="form-input__checker form-input__checker_checked"></div>
+                  <div class="form-input__checker"></div>
                 </label>
                 <label class="form-input radio-button">
                   <input class="form-input__radio" type="radio" name="category_master-class" value="master-class" />
@@ -78,11 +78,7 @@
             <button type="button" class="form__button_type_back form-input form-input__control" onclick="location.href='../index.html';">
               отмена
             </button>
-            <button
-              type="submit"
-              form="categoryForm"
-              class="form__button_type_submit form-input form-input__control form-input__control_active"
-            ></button>
+            <button type="submit" id="category-submit" form="categoryForm" class="form__button_type_submit form-input form-input__control"></button>
           </div>
         </div>
       </main>

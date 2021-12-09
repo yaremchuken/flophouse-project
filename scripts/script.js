@@ -1,10 +1,11 @@
 const categoryForm = document.querySelector('#categoryForm');
 const categoryRadios = document.querySelectorAll('.radio-button');
+const categotySubmitBtn = document.querySelector('#category-submit');
 
 const formRadios = document.querySelectorAll('.form__radio-unit');
 
 if (categoryForm) {
-  let currentChoice = 'cafe';
+  let currentChoice;
 
   categoryRadios.forEach((radio) =>
     radio.addEventListener('click', () => {
@@ -12,12 +13,18 @@ if (categoryForm) {
       if (radioInp) {
         categoryRadios.forEach((r) => switchCategoryRadio(r, radioInp.value));
         currentChoice = radioInp.value;
+        categotySubmitBtn.classList.remove('form__button_type_back');
+        categotySubmitBtn.classList.add('form__button_type_submit');
+        categotySubmitBtn.classList.add('form-input__control_active');
       }
     })
   );
 
   categoryForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    if (!currentChoice) {
+      return;
+    }
     switch (currentChoice) {
       case 'cafe':
         location.href = '../pages/cafeForm.html';

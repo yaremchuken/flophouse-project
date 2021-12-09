@@ -1,47 +1,23 @@
 .form__button_type_submit::after {
   display: none;
-  visibility: hidden;
-  content: "продолжить";
-  color: #fff;
-  height: 50px;
-  border: 1px solid #7100ff;
-  border-radius: 25px;
-  align-self: center;
-  justify-content: center;
-  background-color: #7100ff;
+  content: 'продолжить';
   padding: 0 55px;
-  height: min-content;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .form__button_type_submit::before {
-  visibility: visible;
   display: block;
-  content: "далее";
-  color: #fff;
-  height: 50px;
-  border: 1px solid #7100ff;
-  border-radius: 25px;
-  align-self: center;
-  justify-content: center;
-  background-color: #7100ff;
+  content: 'далее';
   padding: 0 78px;
-  height: min-content;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 @media screen and (max-width: 980px) {
   .form__button_type_submit::after {
     padding: 0;
     display: block;
-    visibility: visible;
   }
 
   .form__button_type_submit::before {
     padding: 0;
     display: none;
-    visibility: hidden;
   }
 }
