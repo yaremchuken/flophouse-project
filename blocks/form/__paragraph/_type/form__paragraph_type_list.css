@@ -1,5 +1,6 @@
-.form__paragraph_list {
+.form__paragraph_type_list {
   padding: 0;
   margin: 0 0 0 28px;
   list-style-type: disc;
+  font-size: 10px;
 }

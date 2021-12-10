@@ -8,7 +8,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__container/header__container.css);
 @import url(../blocks/header/__logo/header__logo.css);
-@import url(../blocks/header/__bar-left/header__bar-left.css);
+@import url(../blocks/header/__bar-logo/header__bar-logo.css);
 @import url(../blocks/header/__nav-bar/header__nav-bar.css);
 @import url(../blocks/header/__link-list/header__link-list.css);
 @import url(../blocks/header/__list-item/header__list-item.css);
@@ -42,7 +42,7 @@
 @import url(../blocks/form/__list/form__list.css);
 @import url(../blocks/form/__paragraphs/form__paragraphs.css);
 @import url(../blocks/form/__paragraph/form__paragraph.css);
-@import url(../blocks/form/__paragraph/_list/form__paragraph_list.css);
+@import url(../blocks/form/__paragraph/_type/form__paragraph_type_list.css);
 @import url(../blocks/form/__radio-block/form__radio-block.css);
 @import url(../blocks/form/__unit/form__unit.css);
 @import url(../blocks/form/__labeled-container/form__labeled-container.css);
