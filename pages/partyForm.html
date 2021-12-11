@@ -43,8 +43,8 @@
       </header>
 
       <main class="content">
-        <h1 class="form__title">стать участником</h1>
-        <div class="form__content">
+        <h1 class="content__title content__title_hideable">стать участником</h1>
+        <div class="form">
           <div class="form__container">
             <p class="form__step">шаг 2 из 4</p>
             <div class="form__instruction">
@@ -56,7 +56,7 @@
               </div>
             </div>
             <form class="form__form" id="party" action="partyForm_step3.html" name="category__form">
-              <div class="form__input-container form-input__bottom-line">
+              <div class="form__input-container form__bottom-line">
                 <div class="form-input form-input_active">
                   <span>посиделки/вечеринка</span>
                   <div class="form-input__checker form-input__checker_checked"></div>
@@ -75,15 +75,15 @@
               </fieldset>
               <fieldset class="form__radio-block">
                 <label class="form__radio-unit">
-                  <span class="form-input__radio-icon form-input__radio-icon_checked"></span>
-                  <input class="form-input__radio" type="radio" id="party-public" name="party-public" value="public" />
+                  <span class="form__radio-icon form__radio-icon_checked"></span>
+                  <input class="form__radio" type="radio" id="party-public" name="party-public" value="public" />
                   <span>открытое мероприятие</span>
                 </label>
                 <p class="form__radio-subtitle">адрес отобразим в карточке события</p>
 
                 <label class="form__radio-unit">
-                  <span class="form-input__radio-icon"></span>
-                  <input class="form-input__radio" type="radio" id="party-private" name="party-private" value="private" />
+                  <span class="form__radio-icon"></span>
+                  <input class="form__radio" type="radio" id="party-private" name="party-private" value="private" />
                   <span>закрытое мероприятие</span>
                 </label>
                 <p class="form__radio-subtitle">адрес увидят только, те кому вы оправите ссылку на событие</p>
@@ -100,10 +100,10 @@
             </form>
           </div>
           <div class="form__controls">
-            <button type="button" class="form__button_type_back form-input form-input__control" onclick="location.href='../pages/category.html';">
+            <button type="button" class="form__control_type_back form-input form__control" onclick="location.href='../pages/category.html';">
               назад
             </button>
-            <button type="submit" form="party" class="form__button_type_submit form-input form-input__control form-input__control_active"></button>
+            <button type="submit" form="party" class="form__control_type_submit form-input form__control form__control_active"></button>
           </div>
         </div>
       </main>

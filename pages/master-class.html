@@ -43,8 +43,8 @@
       </header>
 
       <main class="content">
-        <h1 class="form__title">стать участником</h1>
-        <div class="form__content">
+        <h1 class="content__title content__title_hideable">стать участником</h1>
+        <div class="form">
           <div class="form__container">
             <p class="form__step">шаг 2 из 4</p>
             <div class="form__instruction">
@@ -64,14 +64,14 @@
 
               <fieldset class="form__radio-block">
                 <label class="form__radio-unit">
-                  <span class="form-input__radio-icon form-input__radio-icon_checked"></span>
-                  <input class="form-input__radio" type="radio" id="master-class-online" name="master-class-online" value="online" checked />
+                  <span class="form__radio-icon form__radio-icon_checked"></span>
+                  <input class="form__radio" type="radio" id="master-class-online" name="master-class-online" value="online" checked />
                   <span>онлайн</span>
                 </label>
 
                 <label class="form__radio-unit">
-                  <span class="form-input__radio-icon"></span>
-                  <input class="form-input__radio" type="radio" id="master-class-offline" name="master-class-offline" value="offline" />
+                  <span class="form__radio-icon"></span>
+                  <input class="form__radio" type="radio" id="master-class-offline" name="master-class-offline" value="offline" />
                   <span>оффлайн</span>
                 </label>
               </fieldset>
@@ -109,14 +109,8 @@
             </form>
           </div>
           <div class="form__controls">
-            <button type="button" class="form-input form-input__control form__button_type_back" onclick="location.href='./category.html';">
-              назад
-            </button>
-            <button
-              type="submit"
-              form="master-class"
-              class="form-input form-input__control form-input__control_active form__button_type_submit"
-            ></button>
+            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='./category.html';">назад</button>
+            <button type="submit" form="master-class" class="form-input form__control form__control_active form__control_type_submit"></button>
           </div>
         </div>
       </main>

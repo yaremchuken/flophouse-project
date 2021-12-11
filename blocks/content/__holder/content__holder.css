@@ -1,19 +1,14 @@
-.participate__content {
+.content__holder {
   padding: 0;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-@media screen and (max-width: 1210px) {
-  .participate__content {
+@media screen and (max-width: 980px) {
+  .content__holder {
     height: calc(100vh - 72px - 76px);
     justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .participate__content {
     width: 100%;
   }
 }
