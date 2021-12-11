@@ -9,11 +9,11 @@ if (categoryForm) {
 
   categoryRadios.forEach((radio) =>
     radio.addEventListener('click', () => {
-      const radioInp = radio.querySelector('.form-input__radio');
+      const radioInp = radio.querySelector('.form__radio');
       if (radioInp) {
         categoryRadios.forEach((r) => switchCategoryRadio(r, radioInp.value));
         currentChoice = radioInp.value;
-        categotySubmitBtn.classList.add('form-input__control_active');
+        categotySubmitBtn.classList.add('form__control_active');
       }
     })
   );
@@ -42,26 +42,26 @@ if (categoryForm) {
 
 formRadios.forEach((radio) =>
   radio.addEventListener('click', (e) => {
-    switchRadio(e.target.closest('.form-input__radio'));
+    switchRadio(e.target.closest('.form__radio'));
   })
 );
 
 const switchRadio = (radio) => {
   if (radio) {
     formRadios.forEach((formRadio) => {
-      const radioInp = formRadio.querySelector('.form-input__radio');
-      const radioIcon = formRadio.querySelector('.form-input__radio-icon');
+      const radioInp = formRadio.querySelector('.form__radio');
+      const radioIcon = formRadio.querySelector('.form__radio-icon');
       if (radio.value === radioInp.value) {
-        radioIcon.classList.add('form-input__radio-icon_checked');
+        radioIcon.classList.add('form__radio-icon_checked');
       } else {
-        radioIcon.classList.remove('form-input__radio-icon_checked');
+        radioIcon.classList.remove('form__radio-icon_checked');
       }
     });
   }
 };
 
 const switchCategoryRadio = (radio, value) => {
-  const radioVal = radio.querySelector('.form-input__radio').value;
+  const radioVal = radio.querySelector('.form__radio').value;
   const checkerIcon = radio.querySelector('.form-input__checker');
 
   if (checkerIcon) {

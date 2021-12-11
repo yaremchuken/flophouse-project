@@ -42,8 +42,8 @@
         </div>
       </header>
       <main class="content">
-        <h1 class="form__title">стать участником</h1>
-        <div class="form__content">
+        <h1 class="content__title content__title_hideable">стать участником</h1>
+        <div class="form">
           <div class="form__container">
             <p class="form__step">шаг 1 из 4</p>
             <div class="form__instruction">
@@ -52,22 +52,22 @@
             <form class="form__form" id="categoryForm" name="category__form">
               <fieldset class="form__input-container">
                 <label class="form-input radio-button">
-                  <input class="form-input__radio" type="radio" name="category_cafe" value="cafe" />
+                  <input class="form__radio" type="radio" name="category_cafe" value="cafe" />
                   <span>кафе/бар/ресторан</span>
                   <span class="form-input__checker"></span>
                 </label>
                 <label class="form-input radio-button">
-                  <input class="form-input__radio" type="radio" name="category_master-class" value="master-class" />
+                  <input class="form__radio" type="radio" name="category_master-class" value="master-class" />
                   <span>мастер-класс/лекция</span>
                   <span class="form-input__checker"></span>
                 </label>
                 <label class="form-input radio-button">
-                  <input class="form-input__radio" type="radio" name="category_party" value="party" />
+                  <input class="form__radio" type="radio" name="category_party" value="party" />
                   <span>посиделки/вечеринка</span>
                   <span class="form-input__checker"></span>
                 </label>
                 <label class="form-input radio-button">
-                  <input class="form-input__radio" type="radio" name="category_other" value="other" />
+                  <input class="form__radio" type="radio" name="category_other" value="other" />
                   <span>другое</span>
                   <span class="form-input__checker"></span>
                 </label>
@@ -75,10 +75,8 @@
             </form>
           </div>
           <div class="form__controls">
-            <button type="button" class="form-input form-input__control form__button_type_back" onclick="location.href='../index.html';">
-              отмена
-            </button>
-            <button type="submit" id="category-submit" form="categoryForm" class="form-input form-input__control form__button_type_submit"></button>
+            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='../index.html';">отмена</button>
+            <button type="submit" id="category-submit" form="categoryForm" class="form-input form__control form__control_type_submit"></button>
           </div>
         </div>
       </main>

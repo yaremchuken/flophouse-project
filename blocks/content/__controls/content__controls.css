@@ -1,4 +1,4 @@
-.participate__controls {
+.content__controls {
   padding: 0;
   margin: 32px 0 92px 0;
   display: flex;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 980px) {
-  .participate__controls {
+  .content__controls {
     position: fixed;
     left: 0;
     right: 0;

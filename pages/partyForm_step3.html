@@ -43,8 +43,8 @@
       </header>
 
       <main class="content">
-        <h1 class="form__title">стать участником</h1>
-        <div class="form__content">
+        <h1 class="content__title content__title_hideable">стать участником</h1>
+        <div class="form">
           <div class="form__container">
             <p class="form__step">шаг 3 из 4</p>
             <div class="form__instruction">
@@ -57,34 +57,20 @@
               <fieldset class="form__labeled-container">
                 <div class="form__unit">
                   <label class="form__label" for="party-clock">время проведения</label>
-                  <input
-                    class="form__field formCafe__input_type_text"
-                    id="party-clock"
-                    type="text"
-                    name="party-clock"
-                    placeholder="например: 18:00-22:00"
-                    value=""
-                  />
+                  <input class="form__field" id="party-clock" type="text" name="party-clock" placeholder="например: 18:00-22:00" value="" />
                 </div>
                 <div class="form__unit">
                   <label class="form__label" for="party-address">адрес проведения</label>
-                  <input
-                    class="form__field formCafe__input_type_text"
-                    id="party-address"
-                    type="text"
-                    name="party-address"
-                    placeholder="каждый адрес с новой строки"
-                    value=""
-                  />
+                  <input class="form__field" id="party-address" type="text" name="party-address" placeholder="каждый адрес с новой строки" value="" />
                 </div>
                 <div class="form__unit">
                   <label class="form__label" for="contact-number">номер телефона для бронирования</label>
-                  <input class="form__field formCafe__input_type_number" id="contact-number" type="tel" name="contact-number" value="+7(" />
+                  <input class="form__field" id="contact-number" type="tel" name="contact-number" value="+7(" />
                 </div>
                 <div class="form__unit">
                   <label class="form__label" for="participate-price">стоимость участия</label>
                   <input
-                    class="form__field formCafe__input_type_text"
+                    class="form__field"
                     id="participate-price"
                     type="text"
                     name="participate-price"
@@ -94,18 +80,11 @@
                 </div>
                 <div class="form__unit">
                   <label class="form__label" for="contact-website">ссылка на сайт</label>
-                  <input class="form__field formCafe__input_type_number" id="contact-website" type="text" name="contact-website" value="https://" />
+                  <input class="form__field" id="contact-website" type="text" name="contact-website" value="https://" />
                 </div>
                 <div class="form__unit">
                   <label class="form__label" for="party-links">ссылки на соцсети</label>
-                  <input
-                    class="form__field formCafe__input_type_text"
-                    id="party-links"
-                    type="text"
-                    name="party-links"
-                    placeholder="каждую ссылку с новой строки"
-                    value=""
-                  />
+                  <input class="form__field" id="party-links" type="text" name="party-links" placeholder="каждую ссылку с новой строки" value="" />
                 </div>
                 <div class="form__unit">
                   <label class="form__label" for="party-description">описание</label>
@@ -122,14 +101,10 @@
             </form>
           </div>
           <div class="form__controls">
-            <button type="button" class="form__button_type_back form-input form-input__control" onclick="location.href='../pages/partyForm.html';">
+            <button type="button" class="form__control_type_back form-input form__control" onclick="location.href='../pages/partyForm.html';">
               назад
             </button>
-            <button
-              type="submit"
-              form="partyContacts"
-              class="form__button_type_submit form-input form-input__control form-input__control_active"
-            ></button>
+            <button type="submit" form="partyContacts" class="form__control_type_submit form-input form__control form__control_active"></button>
           </div>
         </div>
       </main>

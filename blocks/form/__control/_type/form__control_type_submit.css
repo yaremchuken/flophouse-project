@@ -1,22 +1,22 @@
-.form__button_type_submit::after {
+.form__control_type_submit::after {
   display: none;
   content: 'продолжить';
   padding: 0 55px;
 }
 
-.form__button_type_submit::before {
+.form__control_type_submit::before {
   display: block;
   content: 'далее';
   padding: 0 78px;
 }
 
 @media screen and (max-width: 980px) {
-  .form__button_type_submit::after {
+  .form__control_type_submit::after {
     padding: 0;
     display: block;
   }
 
-  .form__button_type_submit::before {
+  .form__control_type_submit::before {
     padding: 0;
     display: none;
   }
