@@ -8,3 +8,12 @@
 .form__field:focus {
   border: 2px solid #7100FF;
 }
+
+/* .form__field:required {
+  border: 2px solid rgba(244, 9, 52, 1);
+} */
+
+.form__field:invalid {
+  border: 2px solid rgba(244, 9, 52, 1);
+  /* border: 2px solid yellow; */
+}

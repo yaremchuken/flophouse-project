@@ -51,6 +51,9 @@
 @import url(../blocks/form/__button/_type/form__button_type_submit.css);
 @import url(../blocks/form/__button/_type/form__button_type_back.css);
 @import url(../blocks/form/__radio-subtitle/form__radio-subtitle.css);
+/* Стили - ошибка в активном поле ввода */
+@import url(../blocks/form/__field/_type/form__field_type_error.css);
+@import url(../blocks/form/__error-span/form__error-span.css);
 
 /* Инпуты формы */
 @import url(../blocks/form-input/form-input.css);
