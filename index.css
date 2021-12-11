@@ -8,15 +8,16 @@
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__bar-logo/header__bar-logo.css);
 @import url(./blocks/header/__nav-bar/header__nav-bar.css);
+@import url(./blocks/header/__link/header__link.css);
 @import url(./blocks/header/__link-list/header__link-list.css);
 @import url(./blocks/header/__list-item/header__list-item.css);
 @import url(./blocks/header/__user-actions/header__user-actions.css);
 @import url(./blocks/button/button.css);
-@import url(../blocks/button/_place/button_place_header.css);
+@import url(./blocks/button/_place/button_place_header.css);
 @import url(./blocks/button/_type/button_type_link.css);
 @import url(./blocks/button/_type/button_type_filled.css);
 @import url(./blocks/button/_type/button_type_burger.css);
-@import url(../blocks/button/__icon/button__icon.css);
+@import url(./blocks/button/__icon/button__icon.css);
 /*content*/
 @import url(./blocks/content/content.css);
 @import url(./blocks/participate/participate.css);

@@ -21,13 +21,13 @@
           <nav class="header__nav-bar">
             <ul class="header__link-list">
               <li class="header__list-item">
-                <button type="button" class="button button_type_link">куда пойти</button>
+                <a href="#" class="header__link">куда пойти</a>
               </li>
               <li class="header__list-item">
-                <button type="button" class="button button_type_link" onclick="location.href='../index.html';">стать участником</button>
+                <a href="../index.html" class="header__link">стать участником</a>
               </li>
               <li class="header__list-item">
-                <button type="button" class="button button_type_link">о фестивале</button>
+                <a href="#" class="header__link">о фестивале</a>
               </li>
             </ul>
           </nav>
@@ -71,14 +71,7 @@
                   <option>Санкт-Петербург</option>
                 </select>
                 <label class="form__label" for="party-name">название мероприятия</label>
-                <input
-                  class="form__field"
-                  id="party-name"
-                  type="text"
-                  name="party-name"
-                  placeholder="введите название"
-                  value=""
-                />
+                <input class="form__field" id="party-name" type="text" name="party-name" placeholder="введите название" value="" />
               </fieldset>
               <fieldset class="form__radio-block">
                 <label class="form__radio-unit">
@@ -98,23 +91,9 @@
 
               <fieldset class="form__input-container">
                 <label class="form__label" for="event-date">дата проведения</label>
-                <input
-                  class="form__field"
-                  id="event-date"
-                  type="text"
-                  name="event-date"
-                  placeholder="укажите дату в формате дд.мм.гггг"
-                  value=""
-                />
+                <input class="form__field" id="event-date" type="text" name="event-date" placeholder="укажите дату в формате дд.мм.гггг" value="" />
                 <label class="form__label" for="contact-name">контактное лицо</label>
-                <input
-                  class="form__field"
-                  id="contact-name"
-                  type="text"
-                  name="contact-name"
-                  placeholder="введите ФИО"
-                  value=""
-                />
+                <input class="form__field" id="contact-name" type="text" name="contact-name" placeholder="введите ФИО" value="" />
                 <label class="form__label" for="contact-number">телефон для связи с организатором</label>
                 <input class="form__field" id="contact-number" type="tel" name="contact-number" value="+7(" />
               </fieldset>
