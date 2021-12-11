@@ -4,3 +4,11 @@
   list-style-type: disc;
   font-size: 10px;
 }
+
+@media screen and (max-width: 980px) {
+  .form__paragraph_type_list {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -3px
+  }
+}

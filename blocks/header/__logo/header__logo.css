@@ -6,9 +6,3 @@
   background-size: cover;
   background-image: url(../../../images/logo.svg);
 }
-
-@media screen and (max-width: 1210px) {
-  .header__logo {
-    
-  }
-}

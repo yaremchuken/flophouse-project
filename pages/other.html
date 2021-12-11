@@ -57,11 +57,28 @@
             </div>
             <form class="form__form" id="other" action="other-form_step3.html" name="category__form">
               <div class="form__input-container form__bottom-line">
-                <div class="form-input form-input_active">
+                <div class="form-input form-input_active form-input_place_forms">
                   <span>другое</span>
                   <div class="form-input__checker form-input__checker_checked"></div>
                 </div>
               </div>
+
+              <fieldset class="form__radio-block form__bottom-line">
+                <div class="form__unit">
+                  <label class="form__radio-unit">
+                    <span class="form__radio-icon form__radio-icon_checked"></span>
+                    <input class="form__radio" type="radio" id="master-class-online" name="master-class-online" value="online" checked />
+                    <span>онлайн</span>
+                  </label>
+                </div>
+                <div class="form__unit">
+                  <label class="form__radio-unit">
+                    <span class="form__radio-icon"></span>
+                    <input class="form__radio" type="radio" id="master-class-offline" name="master-class-offline" value="offline" />
+                    <span>оффлайн</span>
+                  </label>
+                </div>
+              </fieldset>
 
               <fieldset class="form__labeled-container">
                 <div class="form__unit">
@@ -96,7 +113,7 @@
             </form>
           </div>
           <div class="form__controls">
-            <button type="button" class="form-input form__control" onclick="location.href='../pages/category.html';">назад</button>
+            <button type="button" class="form__control_type_back form-input form__control" onclick="location.href='../pages/category.html';">назад</button>
             <button type="submit" form="other" class="form__control_type_submit form-input form__control form__control_active"></button>
           </div>
         </div>

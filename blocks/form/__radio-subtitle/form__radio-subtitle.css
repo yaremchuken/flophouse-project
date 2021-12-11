@@ -1,4 +1,28 @@
 .form__radio-subtitle {
   padding: 0;
-  margin: -27px 0 -10px;
+  margin: 0 0 -10px 24px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #96949E;
+}
+
+*:last-of-type > .form__radio-subtitle:last-of-type {
+  margin: 2px 0 3px 24px;
+}
+
+@media screen and (max-width: 980px) {
+  .form__radio-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0 0 -10px 20px;
+  }
+
+  *:last-of-type > .form__radio-subtitle:last-of-type {
+    margin: 2px 0 -50px 24px;
+  }
 }
