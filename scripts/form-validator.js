@@ -34,13 +34,15 @@ const writeError = (unit, message) => {
   const errSpan = unit.querySelector('.form__error');
   errSpan.textContent = message;
   errSpan.classList.add('form__error_visible');
+  unit.querySelector('.form__field').classList.add('form__field_error');
 };
 
 const clearErrors = (target) => {
   const errorField = target.parentElement.querySelector('.form__error');
-  // Проверка на contains не обязательно, но немнго разгрузит процессор
+  // Проверка на contains не обязательно, но немного разгрузит процессор
   if (errorField.classList.contains('form__error_visible')) {
     target.parentElement.querySelector('.form__error').classList.remove('form__error_visible');
+    target.parentElement.querySelector('.form__field').classList.remove('form__field_error');
   }
 };
 
