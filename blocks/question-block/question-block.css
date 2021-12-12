@@ -4,7 +4,11 @@
   display: flex;
   gap: 40px;
   height: 112px;
-  box-shadow: inset 0px -1px 0px #ebe9ed;
+  border-top: 1px solid #ebe9ed;
+}
+
+.question-block:last-of-type {
+  border-bottom: 1px solid #ebe9ed;
 }
 
 @media screen and (max-width: 980px) {
