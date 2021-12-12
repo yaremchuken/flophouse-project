@@ -69,26 +69,46 @@
               <fieldset class="form__labeled-container">
                 <div class="form__unit">
                   <label class="form__label">город</label>
-                  <select class="form__field form__list">
+                  <select class="form__field form__list" onkeyup="clearErrors(this)">
                     <option value="" style="display: none">выберите из списка</option>
                     <option>Москва</option>
                     <option>Санкт-Петербург</option>
                   </select>
+                  <span class="form__error"></span>
                 </div>
 
                 <div class="form__unit">
                   <label class="form__label" for="cafe-name">название заведения</label>
-                  <input class="form__field" id="cafe-name" type="text" name="cafe-name" placeholder="введите название заведения" value="" />
+                  <input
+                    class="form__field"
+                    id="cafe-name"
+                    type="text"
+                    name="cafe-name"
+                    placeholder="введите название заведения"
+                    value=""
+                    onkeyup="clearErrors(this)"
+                  />
+                  <span class="form__error"></span>
                 </div>
 
                 <div class="form__unit">
                   <label class="form__label" for="contact-name">контактное лицо</label>
-                  <input class="form__field" id="contact-name" type="text" name="contact-name" placeholder="введите ФИО" value="" />
+                  <input
+                    class="form__field"
+                    id="contact-name"
+                    type="text"
+                    name="contact-name"
+                    placeholder="введите ФИО"
+                    value=""
+                    onkeyup="clearErrors(this)"
+                  />
+                  <span class="form__error"></span>
                 </div>
 
                 <div class="form__unit">
                   <label class="form__label" for="contact-number">телефон для связи с организатором</label>
-                  <input class="form__field" id="contact-number" type="tel" name="contact-number" value="+7(" />
+                  <input class="form__field" id="contact-number" type="tel" name="contact-number" value="+7(" onkeyup="clearErrors(this)" />
+                  <span class="form__error"></span>
                 </div>
 
                 <div class="form__unit">
@@ -98,7 +118,9 @@
                     name="cafe-description"
                     id="cafe-description"
                     placeholder="Укажите что из меню будет принимать участие в акции"
+                    onkeyup="clearErrors(this)"
                   ></textarea>
+                  <span class="form__error"></span>
                 </div>
               </fieldset>
             </form>
@@ -174,5 +196,6 @@
       </footer>
     </div>
     <script src="../scripts/form-validate.js"></script>
+    <script src="../scripts/validator.js"></script>
   </body>
 </html>
