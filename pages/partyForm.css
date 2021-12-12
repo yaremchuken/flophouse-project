@@ -44,6 +44,7 @@
 @import url(../blocks/form/__unit/form__unit.css);
 @import url(../blocks/form/__label/form__label.css);
 @import url(../blocks/form/__field/form__field.css);
+@import url(../blocks/form/__field/_error/form__field_error.css);
 @import url(../blocks/form/__list/form__list.css);
 @import url(../blocks/form/__city-list/form__city-list.css);
 @import url(../blocks/form/__radio-block/form__radio-block.css);
