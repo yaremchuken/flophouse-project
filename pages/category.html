@@ -50,7 +50,7 @@
               <p class="form__heading">выберите категорию</p>
             </div>
             <form class="form__form" id="categoryForm" name="category__form">
-              <fieldset class="form__input-container form_type_category">
+              <fieldset class="form__input-container form__category">
                 <label class="form-input radio-button">
                   <input class="form__radio" type="radio" name="category_cafe" value="cafe" />
                   <span>кафе/бар/ресторан</span>
@@ -75,8 +75,15 @@
             </form>
           </div>
           <div class="form__controls">
-            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='../index.html';">отмена</button>
-            <button type="submit" id="category-submit" form="categoryForm" class="form-input form__control form__control_type_submit"></button>
+            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='../index.html';">
+              отмена
+            </button>
+            <button
+              type="submit"
+              id="category-submit"
+              form="categoryForm"
+              class="form-input form__control form__control_type_submit"
+            ></button>
           </div>
         </div>
       </main>

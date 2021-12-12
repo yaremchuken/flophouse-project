@@ -30,7 +30,7 @@
 @import url(../blocks/form-input/__checker/_checked/form-input__checker_checked.css);
 /*form*/
 @import url(../blocks/form/form.css);
-@import url(../blocks/form/_type/form_type_category.css);
+@import url(../blocks/form/_type/form__category.css);
 @import url(../blocks/form/__container/form__container.css);
 @import url(../blocks/form/__step/form__step.css);
 @import url(../blocks/form/__instruction/form__instruction.css);
