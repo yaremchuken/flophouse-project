@@ -4,11 +4,3 @@
   display: flex;
   flex-direction: column;
 }
-
-@media screen and (max-width: 980px) {
-  .content__holder {
-    height: calc(100vh - 72px - 76px);
-    justify-content: space-between;
-    width: 100%;
-  }
-}
