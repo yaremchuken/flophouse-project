@@ -133,7 +133,16 @@
 
                 <div class="form__unit">
                   <label class="form__label" for="contact-number">номер телефона для связи с организатором</label>
-                  <input class="form__field" id="contact-number" type="tel" name="contact-number" value="+7(" onkeyup="clearErrors(this)" />
+                  <input
+                    class="form__field"
+                    id="contact-number"
+                    type="tel"
+                    name="contact-number"
+                    value="+7 ("
+                    oninput="formatPhone(event, this)"
+                    onblur="validatePhone(this)"
+                    onkeyup="clearErrors(this)"
+                  />
                   <span class="form__error"></span>
                 </div>
               </fieldset>
@@ -204,6 +213,6 @@
       </footer>
     </div>
     <script src="../scripts/script.js"></script>
-    <script src="../scripts/validator.js"></script>
+    <script src="../scripts/form-validator.js"></script>
   </body>
 </html>
