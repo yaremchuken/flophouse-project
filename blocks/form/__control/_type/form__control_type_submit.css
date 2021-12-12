@@ -10,10 +10,6 @@
   padding: 0 78px;
 }
 
-.form__control_type_submit:hover {
-  background-color: #5100B8;
-}
-
 @media screen and (max-width: 980px) {
   .form__control_type_submit::after {
     padding: 0;
