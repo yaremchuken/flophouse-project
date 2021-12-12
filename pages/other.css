@@ -56,6 +56,7 @@
 @import url(../blocks/form/__control/_active/form__control_active.css);
 @import url(../blocks/form/__control/_type/form__control_type_submit.css);
 @import url(../blocks/form/__control/_type/form__control_type_back.css);
+@import url(../blocks/form/__radio-container/form__radio-container.css);
 /*footer*/
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);

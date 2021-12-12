@@ -51,13 +51,12 @@
 @import url(../blocks/form/__field/form__field.css);
 @import url(../blocks/form/__list/form__list.css);
 @import url(../blocks/form/__bottom-line/form__bottom-line.css);
-@import url(../blocks/form/__radio-block/_subtitle/form__radio-block_subtitle_no.css);
-@import url(../blocks/form/__unit/_subtitle/form__unit_subtitle_no.css);
 @import url(../blocks/form/__controls/form__controls.css);
 @import url(../blocks/form/__control/form__control.css);
 @import url(../blocks/form/__control/_active/form__control_active.css);
 @import url(../blocks/form/__control/_type/form__control_type_submit.css);
 @import url(../blocks/form/__control/_type/form__control_type_back.css);
+@import url(../blocks/form/__radio-container/form__radio-container.css);
 /*footer*/
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);
