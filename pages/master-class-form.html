@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Гедонизмфест</title>
-    <link rel="stylesheet" href="./cafeForm.css" />
+    <link rel="stylesheet" href="./master-class-form.css" />
   </head>
   <body class="container">
     <div class="page">
@@ -33,7 +33,7 @@
           </nav>
           <div class="header__user-actions">
             <button type="button" class="button button_type_link">
-              <img src="../images/icon_heart.svg" alt="иконка сердца" class="button__icon" />
+              <img src="../images/icon_heart.svg" alt="сердце" class="button__icon" />
               хочу пойти
             </button>
             <button type="button" class="button button_type_filled button_place_header">поддержать</button>
@@ -50,26 +50,40 @@
             <div class="form__instruction">
               <p class="form__heading">заполните форму</p>
               <div class="form__paragraphs">
-                <p class="form__paragraph">Для участия вы можете выбрать:</p>
-                <ul class="form__paragraph form__paragraph_type_list">
-                  <li><span class="form__paragraph">определенную позицию из меню</span></li>
-                  <li><span class="form__paragraph">группу позиций</span></li>
-                  <li><span class="form__paragraph">процент от продаж определенных позиций или всего меню</span></li>
-                </ul>
+                <p class="form__paragraph">Определитесь с типом мероприятия — лекция, консультация или мастер-класс.</p>
+                <p class="form__paragraph">Когда люди будут покупать билеты, вам будут приходить уведомления на электронную почту</p>
               </div>
             </div>
-            <form class="form__form" id="cafe" action="cafe-contacts.html" name="category__form">
+
+            <form class="form__form" id="master-class-form" action="master-class-contacts.html" name="master-class-form">
               <div class="form__input-container form__bottom-line">
                 <div class="form-input form-input_active form-input_place_forms">
-                  <span>кафе/бар/ресторан</span>
+                  <span>мастер-класс/лекция</span>
                   <div class="form-input__checker form-input__checker_checked"></div>
                 </div>
               </div>
 
+              <fieldset class="form__radio-block form__bottom-line">
+                <div class="form__radio-container">
+                  <label class="form__radio-unit">
+                    <span class="form__radio-icon form__radio-icon_checked"></span>
+                    <input class="form__radio" type="radio" id="master-class-public" name="master-class-public" value="public" />
+                    <span>онлайн</span>
+                  </label>
+                </div>
+                <div class="form__radio-container">
+                  <label class="form__radio-unit">
+                    <span class="form__radio-icon"></span>
+                    <input class="form__radio" type="radio" id="master-class-private" name="master-class-private" value="private" />
+                    <span>оффлайн</span>
+                  </label>
+                </div>
+              </fieldset>
+
               <fieldset class="form__labeled-container">
                 <div class="form__unit">
                   <label class="form__label">город</label>
-                  <select class="form__field form__list" onfocus="clearErrors(this)">
+                  <select class="form__field form__list" onfocus="clearErrors(this)" id="master-class-city" name="master-class-city">
                     <option value="" style="display: none">выберите из списка</option>
                     <option>Москва</option>
                     <option>Санкт-Петербург</option>
@@ -78,13 +92,27 @@
                 </div>
 
                 <div class="form__unit">
-                  <label class="form__label" for="cafe-name">название заведения</label>
+                  <label class="form__label" for="event-name">название мероприятия</label>
                   <input
                     class="form__field"
-                    id="cafe-name"
+                    id="event-name"
+                    name="event-name"
                     type="text"
-                    name="cafe-name"
-                    placeholder="введите название заведения"
+                    placeholder="введите название"
+                    value=""
+                    onkeyup="clearErrors(this)"
+                  />
+                  <span class="form__error"></span>
+                </div>
+
+                <div class="form__unit">
+                  <label class="form__label" for="event-date">дата проведения</label>
+                  <input
+                    class="form__field"
+                    id="event-date"
+                    name="event-date"
+                    type="text"
+                    placeholder="укажите дату в формате дд.мм.гггг"
                     value=""
                     onkeyup="clearErrors(this)"
                   />
@@ -96,8 +124,8 @@
                   <input
                     class="form__field"
                     id="contact-name"
-                    type="text"
                     name="contact-name"
+                    type="text"
                     placeholder="введите ФИО"
                     value=""
                     onkeyup="clearErrors(this)"
@@ -106,12 +134,12 @@
                 </div>
 
                 <div class="form__unit">
-                  <label class="form__label" for="contact-number">телефон для связи с организатором</label>
+                  <label class="form__label" for="contact-number">номер телефона для связи с организатором</label>
                   <input
                     class="form__field"
                     id="contact-number"
-                    type="tel"
                     name="contact-number"
+                    type="tel"
                     value="+7 ("
                     oninput="formatPhone(event, this)"
                     onblur="validatePhone(this)"
@@ -119,35 +147,17 @@
                   />
                   <span class="form__error"></span>
                 </div>
-
-                <div class="form__unit">
-                  <label class="form__label" for="cafe-description">описание</label>
-                  <textarea
-                    class="form-input form__field form__textarea form__textarea_size_xl"
-                    name="cafe-description"
-                    id="cafe-description"
-                    placeholder="Укажите что из меню будет принимать участие в акции"
-                    onkeyup="clearErrors(this)"
-                  ></textarea>
-                  <span class="form__error"></span>
-                </div>
               </fieldset>
             </form>
           </div>
           <div class="form__controls">
-            <button
-              type="button"
-              name="category__form"
-              class="form__control_type_back form-input form__control"
-              onclick="location.href='./category.html';"
-            >
+            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='./pick-category.html';">
               назад
             </button>
             <button
               type="submit"
-              form="cafe"
-              name="category__form"
-              class="form__control_type_submit form-input form__control form__control_active"
+              form="master-class-form"
+              class="form-input form__control form__control_active form__control_type_submit"
             ></button>
           </div>
         </div>
@@ -204,6 +214,7 @@
         </div>
       </footer>
     </div>
+    <script src="../scripts/script.js"></script>
     <script src="../scripts/form-validator.js"></script>
   </body>
 </html>

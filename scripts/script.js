@@ -1,4 +1,4 @@
-const categoryForm = document.querySelector('#categoryForm');
+const categoryForm = document.querySelector('#pick-category');
 const categoryRadios = document.querySelectorAll('.radio-button');
 const categotySubmitBtn = document.querySelector('#category-submit');
 
@@ -25,16 +25,16 @@ if (categoryForm) {
     }
     switch (currentChoice) {
       case 'cafe':
-        location.href = '../pages/cafeForm.html';
+        location.href = '../pages/cafe-form.html';
         break;
       case 'master-class':
-        location.href = '../pages/master-class.html';
+        location.href = '../pages/master-class-form.html';
         break;
       case 'party':
-        location.href = '../pages/partyForm.html';
+        location.href = '../pages/party-form.html';
         break;
       case 'other':
-        location.href = '../pages/other.html';
+        location.href = '../pages/other-form.html';
         break;
     }
   });
