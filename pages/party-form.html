@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Гедонизмфест</title>
-    <link rel="stylesheet" href="./partyForm.css" />
+    <link rel="stylesheet" href="./party-form.css" />
   </head>
   <body class="container">
     <div class="page">
@@ -55,7 +55,8 @@
                 <p class="form__paragraph">Установите пожертвование, например кусочек пирога за любую комфортную сумму</p>
               </div>
             </div>
-            <form class="form__form" id="party" action="partyForm_step3.html" name="category__form">
+
+            <form class="form__form" id="party-form" action="party-contacts.html" name="party-form">
               <div class="form__input-container form__bottom-line">
                 <div class="form-input form-input_active form-input_place_forms">
                   <span>посиделки/вечеринка</span>
@@ -66,7 +67,7 @@
               <fieldset class="form__labeled-container form__bottom-line">
                 <div class="form__unit">
                   <label class="form__label">город</label>
-                  <select class="form__field form__city-list" onfocus="clearErrors(this)">
+                  <select class="form__field form__city-list" onfocus="clearErrors(this)" id="party-city" name="party-city">
                     <option value="" style="display: none">выберите из списка</option>
                     <option>Москва</option>
                     <option>Санкт-Петербург</option>
@@ -75,12 +76,12 @@
                 </div>
 
                 <div class="form__unit">
-                  <label class="form__label" for="party-name">название мероприятия</label>
+                  <label class="form__label" for="event-name">название мероприятия</label>
                   <input
                     class="form__field"
-                    id="party-name"
+                    id="event-name"
+                    name="event-name"
                     type="text"
-                    name="party-name"
                     placeholder="введите название"
                     value=""
                     onkeyup="clearErrors(this)"
@@ -98,6 +99,7 @@
                   </label>
                   <p class="form__radio-subtitle">адрес отобразим в карточке события</p>
                 </div>
+
                 <div class="form__radio-container">
                   <label class="form__radio-unit">
                     <span class="form__radio-icon"></span>
@@ -114,8 +116,8 @@
                   <input
                     class="form__field"
                     id="event-date"
-                    type="text"
                     name="event-date"
+                    type="text"
                     placeholder="укажите дату в формате дд.мм.гггг"
                     value=""
                     onkeyup="clearErrors(this)"
@@ -128,8 +130,8 @@
                   <input
                     class="form__field"
                     id="contact-name"
-                    type="text"
                     name="contact-name"
+                    type="text"
                     placeholder="введите ФИО"
                     value=""
                     onkeyup="clearErrors(this)"
@@ -142,8 +144,8 @@
                   <input
                     class="form__field"
                     id="contact-number"
-                    type="tel"
                     name="contact-number"
+                    type="tel"
                     value="+7 ("
                     oninput="formatPhone(event, this)"
                     onblur="validatePhone(this)"
@@ -156,10 +158,14 @@
           </div>
 
           <div class="form__controls">
-            <button type="button" class="form__control_type_back form-input form__control" onclick="location.href='category.html';">
+            <button type="button" class="form__control_type_back form-input form__control" onclick="location.href='pick-category.html';">
               назад
             </button>
-            <button type="submit" form="party" class="form__control_type_submit form-input form__control form__control_active"></button>
+            <button
+              type="submit"
+              form="party-form"
+              class="form__control_type_submit form-input form__control form__control_active"
+            ></button>
           </div>
         </div>
       </main>

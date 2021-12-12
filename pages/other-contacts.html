@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Гедонизмфест</title>
-    <link rel="stylesheet" href="./partyForm_step3.css" />
+    <link rel="stylesheet" href="./other-contacts.css" />
   </head>
   <body class="container">
     <div class="page">
@@ -53,15 +53,16 @@
                 <p class="form__paragraph">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
               </div>
             </div>
-            <form class="form__form" id="partyContacts" name="category__form">
+
+            <form class="form__form" id="other-contacts" name="other-contacts">
               <fieldset class="form__labeled-container form__labeled-container_place_form">
                 <div class="form__unit">
-                  <label class="form__label" for="party-clock">время проведения</label>
+                  <label class="form__label" for="event-clock">время проведения</label>
                   <input
                     class="form__field"
-                    id="party-clock"
+                    id="event-clock"
+                    name="event-clock"
                     type="text"
-                    name="party-clock"
                     placeholder="например: 18:00-22:00"
                     value=""
                     onkeyup="clearErrors(this)"
@@ -70,12 +71,12 @@
                 </div>
 
                 <div class="form__unit">
-                  <label class="form__label" for="party-address">адрес проведения</label>
+                  <label class="form__label" for="event-address">адрес проведения</label>
                   <input
                     class="form__field"
-                    id="party-address"
+                    id="event-address"
+                    name="event-address"
                     type="text"
-                    name="party-address"
                     placeholder="каждый адрес с новой строки"
                     value=""
                     onkeyup="clearErrors(this)"
@@ -88,8 +89,8 @@
                   <input
                     class="form__field"
                     id="contact-number"
-                    type="tel"
                     name="contact-number"
+                    type="tel"
                     value="+7 ("
                     oninput="formatPhone(event, this)"
                     onblur="validatePhone(this)"
@@ -103,8 +104,8 @@
                   <input
                     class="form__field"
                     id="participate-price"
-                    type="text"
                     name="participate-price"
+                    type="text"
                     placeholder="укажите стоимость в рублях"
                     value=""
                     onkeyup="clearErrors(this)"
@@ -113,39 +114,12 @@
                 </div>
 
                 <div class="form__unit">
-                  <label class="form__label" for="contact-website">ссылка на сайт</label>
-                  <input
-                    class="form__field"
-                    id="contact-website"
-                    type="text"
-                    name="contact-website"
-                    value="https://"
-                    onkeyup="clearErrors(this)"
-                  />
-                  <span class="form__error"></span>
-                </div>
-
-                <div class="form__unit">
-                  <label class="form__label" for="party-links">ссылки на соцсети</label>
-                  <input
-                    class="form__field"
-                    id="party-links"
-                    type="text"
-                    name="party-links"
-                    placeholder="каждую ссылку с новой строки"
-                    value=""
-                    onkeyup="clearErrors(this)"
-                  />
-                  <span class="form__error"></span>
-                </div>
-
-                <div class="form__unit">
-                  <label class="form__label" for="party-description">описание</label>
+                  <label class="form__label" for="other-description">описание</label>
                   <textarea
-                    class="form__field form-input form__textarea form__textarea_size_m"
-                    name="party-description"
-                    id="party-description"
-                    placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"
+                    class="form__field form-input form__textarea form__textarea_size_l"
+                    name="other-description"
+                    id="other-description"
+                    placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"
                     onkeyup="clearErrors(this)"
                   ></textarea>
                   <span class="form__error"></span>
@@ -154,12 +128,13 @@
             </form>
           </div>
           <div class="form__controls">
-            <button type="button" class="form__control_type_back form-input form__control" onclick="location.href='partyForm.html';">
+            <button type="button" class="form__control_type_back form-input form__control" onclick="location.href='other-form.html';">
               назад
             </button>
+
             <button
               type="submit"
-              form="partyContacts"
+              form="other-contacts"
               class="form__control_type_submit form-input form__control form__control_active"
             ></button>
           </div>

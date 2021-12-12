@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Гедонизмфест</title>
-    <link rel="stylesheet" href="./master-class_Step3.css" />
+    <link rel="stylesheet" href="./cafe-form.css" />
   </head>
   <body class="container">
     <div class="page">
@@ -33,7 +33,7 @@
           </nav>
           <div class="header__user-actions">
             <button type="button" class="button button_type_link">
-              <img src="../images/icon_heart.svg" alt="сердце" class="button__icon" />
+              <img src="../images/icon_heart.svg" alt="иконка сердца" class="button__icon" />
               хочу пойти
             </button>
             <button type="button" class="button button_type_filled button_place_header">поддержать</button>
@@ -46,23 +46,46 @@
         <h1 class="content__title content__title_hideable">стать участником</h1>
         <div class="form">
           <div class="form__container">
-            <p class="form__step">шаг 3 из 4</p>
+            <p class="form__step">шаг 2 из 4</p>
             <div class="form__instruction">
-              <p class="form__heading">укажите контакты и часы работы</p>
+              <p class="form__heading">заполните форму</p>
               <div class="form__paragraphs">
-                <p class="form__paragraph">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
+                <p class="form__paragraph">Для участия вы можете выбрать:</p>
+                <ul class="form__paragraph form__paragraph_type_list">
+                  <li><span class="form__paragraph">определенную позицию из меню</span></li>
+                  <li><span class="form__paragraph">группу позиций</span></li>
+                  <li><span class="form__paragraph">процент от продаж определенных позиций или всего меню</span></li>
+                </ul>
               </div>
             </div>
-            <form class="form__form" id="master-class-step3" name="category__form">
-              <fieldset class="form__labeled-container form__labeled-container_place_form">
+
+            <form class="form__form" id="cafe-form" action="cafe-contacts.html" name="cafe-form">
+              <div class="form__input-container form__bottom-line">
+                <div class="form-input form-input_active form-input_place_forms">
+                  <span>кафе/бар/ресторан</span>
+                  <div class="form-input__checker form-input__checker_checked"></div>
+                </div>
+              </div>
+
+              <fieldset class="form__labeled-container">
                 <div class="form__unit">
-                  <label class="form__label" for="cafe-clock">время проведения</label>
+                  <label class="form__label" for="cafe-city">город</label>
+                  <select class="form__field form__list" onfocus="clearErrors(this)" id="cafe-city" name="cafe-city">
+                    <option value="" style="display: none">выберите из списка</option>
+                    <option>Москва</option>
+                    <option>Санкт-Петербург</option>
+                  </select>
+                  <span class="form__error"></span>
+                </div>
+
+                <div class="form__unit">
+                  <label class="form__label" for="cafe-name">название заведения</label>
                   <input
                     class="form__field"
-                    id="cafe-clock"
+                    id="cafe-name"
+                    name="cafe-name"
                     type="text"
-                    name="cafe-clock"
-                    placeholder="например: 18:00-22:00"
+                    placeholder="введите название заведения"
                     value=""
                     onkeyup="clearErrors(this)"
                   />
@@ -70,13 +93,13 @@
                 </div>
 
                 <div class="form__unit">
-                  <label class="form__label" for="cafe-address">адрес проведения</label>
+                  <label class="form__label" for="contact-name">контактное лицо</label>
                   <input
                     class="form__field"
-                    id="cafe-address"
+                    id="contact-name"
+                    name="contact-name"
                     type="text"
-                    name="cafe-address"
-                    placeholder="каждый адрес с новой строки"
+                    placeholder="введите ФИО"
                     value=""
                     onkeyup="clearErrors(this)"
                   />
@@ -84,12 +107,12 @@
                 </div>
 
                 <div class="form__unit">
-                  <label class="form__label" for="contact-number">номер телефона для бронирования</label>
+                  <label class="form__label" for="contact-number">телефон для связи с организатором</label>
                   <input
                     class="form__field"
                     id="contact-number"
-                    type="tel"
                     name="contact-number"
+                    type="tel"
                     value="+7 ("
                     oninput="formatPhone(event, this)"
                     onblur="validatePhone(this)"
@@ -99,26 +122,12 @@
                 </div>
 
                 <div class="form__unit">
-                  <label class="form__label" for="participation-price">стоимость участия</label>
-                  <input
-                    class="form__field"
-                    id="participation-price"
-                    type="text"
-                    name="participation-price"
-                    placeholder="укажите стоимость в рублях"
-                    value=""
-                    onkeyup="clearErrors(this)"
-                  />
-                  <span class="form__error"></span>
-                </div>
-
-                <div class="form__unit">
-                  <label class="form__label" for="cafe-description">описание</label>
+                  <label class="form__label" for="event-description">описание</label>
                   <textarea
-                    class="form__field form-input form__textarea form__textarea_size_l"
-                    name="cafe-description"
-                    id="cafe-description"
-                    placeholder="Напишите небольшой анонс вашего местер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"
+                    class="form-input form__field form__textarea form__textarea_size_xl"
+                    id="event-description"
+                    name="event-description"
+                    placeholder="Укажите что из меню будет принимать участие в акции"
                     onkeyup="clearErrors(this)"
                   ></textarea>
                   <span class="form__error"></span>
@@ -127,14 +136,10 @@
             </form>
           </div>
           <div class="form__controls">
-            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='master-class.html';">
+            <button type="button" class="form__control_type_back form-input form__control" onclick="location.href='./pick-category.html';">
               назад
             </button>
-            <button
-              type="submit"
-              form="master-class-step3"
-              class="form-input form__control form__control_type_submit form__control_active"
-            ></button>
+            <button type="submit" form="cafe-form" class="form__control_type_submit form-input form__control form__control_active"></button>
           </div>
         </div>
       </main>
