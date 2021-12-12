@@ -18,6 +18,11 @@
   border-radius: 25px;
 
   cursor: pointer;
+  transition: background-color .1s ease-in;
+}
+
+.content__control:hover {
+  background-color: #5100B8;
 }
 
 @media screen and (max-width: 980px) {
