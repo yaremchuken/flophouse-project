@@ -5,4 +5,5 @@
   min-width: 154px;
   width: 40%;
   max-width: 204px;
+  transition: background-color .1s ease-in;
 }

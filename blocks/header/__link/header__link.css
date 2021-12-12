@@ -11,6 +11,11 @@
 
   text-decoration: none;
   cursor: pointer;
+  transition: color .2s ease-in;
+}
+
+.header__link:hover {
+  color: #5100B8;
 }
 
 @media screen and (max-width: 1210px) {
