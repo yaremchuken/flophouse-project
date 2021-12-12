@@ -78,14 +78,15 @@
                 </div>
               </fieldset>
 
-              <fieldset class="form__labeled-container ">
+              <fieldset class="form__labeled-container">
                 <div class="form__unit">
                   <label class="form__label">город</label>
-                  <select class="form__field form__list">
+                  <select class="form__field form__list" onkeyup="clearErrors(this)">
                     <option value="" style="display: none">выберите из списка</option>
                     <option>Москва</option>
                     <option>Санкт-Петербург</option>
                   </select>
+                  <span class="form__error"></span>
                 </div>
 
                 <div class="form__unit">
@@ -97,29 +98,56 @@
                     name="event-name"
                     placeholder="введите название"
                     value=""
+                    onkeyup="clearErrors(this)"
                   />
+                  <span class="form__error"></span>
                 </div>
 
                 <div class="form__unit">
                   <label class="form__label" for="event-date">дата проведения</label>
-                  <input class="form__field" id="event-date" type="text" name="event-date" placeholder="укажите дату в формате дд.мм.гггг" value="" />
+                  <input
+                    class="form__field"
+                    id="event-date"
+                    type="text"
+                    name="event-date"
+                    placeholder="укажите дату в формате дд.мм.гггг"
+                    value=""
+                    onkeyup="clearErrors(this)"
+                  />
+                  <span class="form__error"></span>
                 </div>
 
                 <div class="form__unit">
                   <label class="form__label" for="contact-name">контактное лицо</label>
-                  <input class="form__field" id="contact-name" type="text" name="contact-name" placeholder="введите ФИО" value="" />
+                  <input
+                    class="form__field"
+                    id="contact-name"
+                    type="text"
+                    name="contact-name"
+                    placeholder="введите ФИО"
+                    value=""
+                    onkeyup="clearErrors(this)"
+                  />
+                  <span class="form__error"></span>
                 </div>
 
                 <div class="form__unit">
                   <label class="form__label" for="contact-number">номер телефона для связи с организатором</label>
-                  <input class="form__field" id="contact-number" type="tel" name="contact-number" value="+7(" />
+                  <input class="form__field" id="contact-number" type="tel" name="contact-number" value="+7(" onkeyup="clearErrors(this)" />
+                  <span class="form__error"></span>
                 </div>
               </fieldset>
             </form>
           </div>
           <div class="form__controls">
-            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='./category.html';">назад</button>
-            <button type="submit" form="master-class" class="form-input form__control form__control_active form__control_type_submit"></button>
+            <button type="button" class="form-input form__control form__control_type_back" onclick="location.href='./category.html';">
+              назад
+            </button>
+            <button
+              type="submit"
+              form="master-class"
+              class="form-input form__control form__control_active form__control_type_submit"
+            ></button>
           </div>
         </div>
       </main>
@@ -176,5 +204,6 @@
       </footer>
     </div>
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/validator.js"></script>
   </body>
 </html>

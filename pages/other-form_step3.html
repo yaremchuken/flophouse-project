@@ -57,16 +57,38 @@
               <fieldset class="form__labeled-container form__labeled-container_place_form">
                 <div class="form__unit">
                   <label class="form__label" for="other-clock">время проведения</label>
-                  <input class="form__field" id="other-clock" type="text" name="other-clock" placeholder="например: 18:00-22:00" value="" />
+                  <input
+                    class="form__field"
+                    id="other-clock"
+                    type="text"
+                    name="other-clock"
+                    placeholder="например: 18:00-22:00"
+                    value=""
+                    onkeyup="clearErrors(this)"
+                  />
+                  <span class="form__error"></span>
                 </div>
+
                 <div class="form__unit">
                   <label class="form__label" for="other-address">адрес проведения</label>
-                  <input class="form__field" id="other-address" type="text" name="other-address" placeholder="каждый адрес с новой строки" value="" />
+                  <input
+                    class="form__field"
+                    id="other-address"
+                    type="text"
+                    name="other-address"
+                    placeholder="каждый адрес с новой строки"
+                    value=""
+                    onkeyup="clearErrors(this)"
+                  />
+                  <span class="form__error"></span>
                 </div>
+
                 <div class="form__unit">
                   <label class="form__label" for="contact-number">номер телефона для бронирования</label>
-                  <input class="form__field" id="contact-number" type="tel" name="contact-number" value="+7(" />
+                  <input class="form__field" id="contact-number" type="tel" name="contact-number" value="+7(" onkeyup="clearErrors(this)" />
+                  <span class="form__error"></span>
                 </div>
+
                 <div class="form__unit">
                   <label class="form__label" for="participate-price">стоимость участия</label>
                   <input
@@ -76,8 +98,11 @@
                     name="participate-price"
                     placeholder="укажите стоимость в рублях"
                     value=""
+                    onkeyup="clearErrors(this)"
                   />
+                  <span class="form__error"></span>
                 </div>
+
                 <div class="form__unit">
                   <label class="form__label" for="other-description">описание</label>
                   <textarea
@@ -85,7 +110,9 @@
                     name="other-description"
                     id="other-description"
                     placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"
+                    onkeyup="clearErrors(this)"
                   ></textarea>
+                  <span class="form__error"></span>
                 </div>
               </fieldset>
             </form>
@@ -94,7 +121,11 @@
             <button type="button" class="form__control_type_back form-input form__control" onclick="location.href='../pages/other.html';">
               назад
             </button>
-            <button type="submit" form="otherContacts" class="form__control_type_submit form-input form__control form__control_active"></button>
+            <button
+              type="submit"
+              form="otherContacts"
+              class="form__control_type_submit form-input form__control form__control_active"
+            ></button>
           </div>
         </div>
       </main>
@@ -150,5 +181,6 @@
         </div>
       </footer>
     </div>
+    <script src="../scripts/validator.js"></script>
   </body>
 </html>
