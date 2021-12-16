@@ -39,6 +39,7 @@
 @import url(../blocks/form/__paragraphs/form__paragraphs.css);
 @import url(../blocks/form/__paragraph/form__paragraph.css);
 @import url(../blocks/form/__paragraph/_type/form__paragraph_type_list.css);
+@import url(../blocks/form/__paragraph/_type/form__paragraph_type_list-item.css);
 @import url(../blocks/form/__form/form__form.css);
 @import url(../blocks/form/__list/form__list.css);
 @import url(../blocks/form/__input-container/form__input-container.css);
