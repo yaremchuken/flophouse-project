@@ -8,3 +8,7 @@
 .button_type_link:hover {
   color: #5100B8;
 }
+
+.button_type_link:hover .button__icon {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(100%) saturate(3696%) hue-rotate(264deg) brightness(67%) contrast(131%);
+}

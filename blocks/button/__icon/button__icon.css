@@ -7,10 +7,6 @@
   transition: filter .1s ease-in;
 }
 
-.button__icon:hover {
-  filter: invert(20%) sepia(92%) saturate(3718%) hue-rotate(271deg) brightness(62%) contrast(194%)
-}
-
 @media screen and (max-width: 1210px) {
   .button__icon {
     margin-right: 8px;
