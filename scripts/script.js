@@ -46,19 +46,20 @@ formRadios.forEach((radio) =>
   })
 );
 
-const switchRadio = (radio) => {
-  if (radio) {
-    formRadios.forEach((formRadio) => {
-      const radioInp = formRadio.querySelector('.form__radio');
-      const radioIcon = formRadio.querySelector('.form__radio-icon');
-      if (radio.value === radioInp.value) {
-        radioIcon.classList.add('form__radio-icon_checked');
-      } else {
-        radioIcon.classList.remove('form__radio-icon_checked');
-      }
-    });
-  }
-};
+//Переключение классов реализовано средствами CSS
+// const switchRadio = (radio) => {
+//   if (radio) {
+//     formRadios.forEach((formRadio) => {
+//       const radioInp = formRadio.querySelector('.form__radio');
+//       const radioIcon = formRadio.querySelector('.form__radio-icon');
+//       if (radio.value === radioInp.value) {
+//         radioIcon.classList.add('form__radio-icon_checked');
+//       } else {
+//         radioIcon.classList.remove('form__radio-icon_checked');
+//       }
+//     });
+//   }
+// };
 
 const switchCategoryRadio = (radio, value) => {
   const radioVal = radio.querySelector('.form__radio').value;
