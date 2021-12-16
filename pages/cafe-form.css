@@ -56,6 +56,12 @@
 @import url(../blocks/form/__control/_type/form__control_type_submit.css);
 @import url(../blocks/form/__control/_type/form__control_type_back.css);
 @import url(../blocks/form/__bottom-line/form__bottom-line.css);
+@import url(../blocks/form/__select/form__select.css);
+@import url(../blocks/form/__select/_visible/form__select_visible.css);
+@import url(../blocks/form/__select-item/form__select-item.css);
+@import url(../blocks/form/__select-item/_checked/form__select-item_checked.css);
+@import url(../blocks/form/__fake-select/form__fake-select.css);
+@import url(../blocks/form/__fake-select/_opened/form__fake-select_opened.css);
 /*footer*/
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);

@@ -13,7 +13,6 @@ document.querySelector('.form__form').addEventListener('submit', (e) => {
 
   formUnits.forEach((unit) => {
     const field = unit.querySelector('.form__field');
-
     if (!field.value) {
       errors = true;
       const label = unit.querySelector('.form__label').textContent;
@@ -85,3 +84,5 @@ const validatePhone = (field) => {
 
   return true;
 };
+
+

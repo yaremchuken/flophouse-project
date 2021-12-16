@@ -84,10 +84,15 @@
               <fieldset class="form__labeled-container">
                 <div class="form__unit">
                   <label class="form__label">город</label>
-                  <select class="form__field form__list" onfocus="clearErrors(this)" id="other-city" name="other-city">
+                  <p class="form__fake-select form__list">выберите из списка</p>
+                  <ul class="form__select">
+                    <li class="form__select-item">Москва</li>
+                    <li class="form__select-item">Санкт-Петербург</li>
+                  </ul>
+                  <select class="form__select form__field" onfocus="clearErrors(this)" id="other-city" name="other-city">
                     <option value="" style="display: none">выберите из списка</option>
-                    <option>Москва</option>
-                    <option>Санкт-Петербург</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
                   </select>
                   <span class="form__error"></span>
                 </div>
@@ -216,5 +221,6 @@
       </footer>
     </div>
     <script src="../scripts/form-validator.js"></script>
+    <script src="../scripts/select.js"></script>
   </body>
 </html>
