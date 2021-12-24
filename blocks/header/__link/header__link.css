@@ -2,13 +2,11 @@
   padding: 0;
   margin: 12px 22px;
   display: flex;
-
   color: #3b3748;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
   white-space: nowrap;
-
   text-decoration: none;
   cursor: pointer;
 }

@@ -4,7 +4,7 @@
   height: 24px;
 }
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 980px) {
   .button__icon {
     margin-right: 8px;
     width: 20px;
