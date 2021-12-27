@@ -1,6 +1,6 @@
 .form__controls {
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0;
   display: flex;
   justify-content: flex-end;
   gap: 10px;
