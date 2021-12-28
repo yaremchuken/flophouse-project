@@ -1,0 +1,14 @@
+.form__paragraph_type_list-item::before {
+  content: "\2022";
+  display: inline-block;
+  margin-left: -18px;
+  width: 18px;
+  color: #3B3748;
+}
+
+@media screen and (max-width: 980px) {
+  .form__paragraph_type_list-item::before {
+    margin-left: -16px;
+    width: 16px;
+  }
+}
